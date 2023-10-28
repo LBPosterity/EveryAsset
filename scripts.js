@@ -15,7 +15,7 @@ const listingsData = [
     },
     {
       name: "Meowsalot",
-      tagChildA: ["tuna", "catnip", "celery"],
+      tagChildA: ["tuna", "catnip", "sdfsdf"],
       hero: "https://learnwebcode.github.io/json-example/images/cat-1.jpg"
     }
   ];
