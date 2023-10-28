@@ -1,62 +1,62 @@
-const petsData = [
+const listingsData = [
     {
-      name: "Purrsloud",
-      species: "Cat",
-      favFoods: ["wet food", "dry food", "<strong>any</strong> food"],
-      birthYear: 2016,
-      photo: "https://learnwebcode.github.io/json-example/images/cat-2.jpg",
-      title: "My Title",
-      desc: "My description here"
+      name: "Listing Example A",
+      description: "my description goes here",
+      tagParentA: "Parent Tag A",
+      tagChildA: ["Child Tag A", "Child Tag B", "Child Tag C"],
+      tagParentB: "Parent Tag B",
+      tagChildB: ["Child Tag A", "Child Tag B", "Child Tag C"],
+      hero: "https://learnwebcode.github.io/json-example/images/cat-2.jpg",
+      examples: "https://learnwebcode.github.io/json-example/images/dog-1.jpg",
     },
     {
       name: "Barksalot",
-      species: "Dog",
-      birthYear: 2008,
-      photo: "https://learnwebcode.github.io/json-example/images/dog-1.jpg"
+      hero: "https://learnwebcode.github.io/json-example/images/dog-1.jpg"
     },
     {
       name: "Meowsalot",
-      species: "Cat",
-      favFoods: ["tuna", "catnip", "celery"],
-      birthYear: 2012,
-      photo: "https://learnwebcode.github.io/json-example/images/cat-1.jpg"
+      tagChildA: ["tuna", "catnip", "celery"],
+      hero: "https://learnwebcode.github.io/json-example/images/cat-1.jpg"
     }
   ];
   
-  function age(birthYear) {
-    let calculatedAge = new Date().getFullYear() - birthYear;
-    if (calculatedAge == 1) {
-      return "1 year old";
-    } else if (calculatedAge == 0) {
-      return "Baby";
-    } else {
-      return `${calculatedAge} years old`;
-    }
-  }
   
-  function foods(foods) {
+  function childTagsA(childTagsA) {
     return `
-  <h4>Favorite Foods</h4>
-  <ul class="foods-list">
-  ${foods.map(food => `<li>${food}</li>`).join("")}
-  </ul>
-  `;
+      ${childTagsA.map(tags => `<div>${tags}</div>`).join("")}
+    `;
+  }
+
+  function childTagsB(childTagsB) {
+    return `
+      ${childTagsB.map(tags => `<div>${tags}</div>`).join("")}
+    `;
   }
   
-  function petTemplate(pet) {
+  function listingTemplate(listing) {
     return `
       <div class="animal">
-      <img class="pet-photo" src="${pet.photo}">
-      <h2 class="pet-name">${pet.name} <span class="species">(${pet.species})</span></h2>
-      <p><strong>Age:</strong> ${age(pet.birthYear)}</p>
-      ${pet.favFoods ? foods(pet.favFoods) : ""}
+        <img class="listing-hero" src="${listing.hero}">
+        <h2 class="listing-name">${listing.name}</h2>
+        ${listing.description ? `<p>${listing.description}</p>` : ""}
+
+        ${listing.tagParentA ? `<div>${listing.tagParentA} 
+            ${listing.tagChildA ? childTagsA(listing.tagChildA) : ""} 
+        </div>` : ""}
+
+        ${listing.tagParentB ? `<div>${listing.tagParentB} 
+          ${listing.tagChildB ? childTagsB(listing.tagChildB) : ""} 
+        </div>` : ""}
+
+        ${ listing.examples ? `<img class="listing-hero" src="${listing.examples}">` : ""}
+      
       </div>
     `;
   }
   
   document.getElementById("app").innerHTML = `
-    <h1 class="app-title">Pets (${petsData.length} results)</h1>
-    ${petsData.map(petTemplate).join("")}
-    <p class="footer">These ${petsData.length} pets were added recently. Check back soon for updates.</p>
+    <h1 class="app-title">listings (${listingsData.length} results)</h1>
+    ${listingsData.map(listingTemplate).join("")}
+    <p class="footer">These ${listingsData.length} listings were added recently. Check back soon for updates.</p>
   `;
   
