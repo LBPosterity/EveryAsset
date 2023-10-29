@@ -29,6 +29,7 @@ hr
   --text-base: 1.6rem; /* base text size */
   --text-ratio: 0.4rem; /*ratio - heading to base*/
   --line-height-base: 1.6; 
+  --space-after-base: 1.33ch;
   
   --family-body: 'Lato', sans-serif;
   --body-weight: normal;
@@ -45,6 +46,7 @@ hr
   --text-small: calc(var(--text-base)*0.875); 
   --text-large: calc(var(--text-base)*1.2); 
   --line-height-1: 1;
+  --space-after-heading: calc(var(--space-after-base) * 0.66);
 
   
   /* Seed Colours ---------------------------------*/
@@ -308,7 +310,7 @@ body, p, label, ul, li, details, summary
     font-size: var(--text-base);
     font-family: var(--family-body);
     font-weight: var(--body-weight);
-    margin-block-end: 1.33ch;
+    margin-block-end: var(--space-after-base);
 }
 
 p.small
@@ -319,7 +321,7 @@ p.small
 h1, h2, h3, h4, h5 
 {
   line-height: calc(var(--line-height-base)*0.8);  
-  margin-block-end: 1.4ch;
+  margin-block-end: var(--space-after-heading);
   font-family: var(--family-heading);
   font-weight: var(--heading-weight);
   color: var(--heading-color);

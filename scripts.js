@@ -5,7 +5,7 @@ const listingsData = [
   },
   {
       hero: "https://learnwebcode.github.io/json-example/images/cat-2.jpg",
-      type: "primary",
+      type: "image primary",
       name: "Listing Example A",
       description: "my description goes here",
       tagParentA: "Parent Tag A",
@@ -16,7 +16,7 @@ const listingsData = [
     },
     {
       hero: "https://learnwebcode.github.io/json-example/images/cat-2.jpg",
-      type: "secondary",
+      type: "image secondary",
       name: "Listing Example B",
       description: "my description goes here",
       tagParentA: "Parent Tag A",
@@ -27,7 +27,7 @@ const listingsData = [
     },
     {
       hero: "https://learnwebcode.github.io/json-example/images/cat-2.jpg",
-      type: "secondary",
+      type: "image secondary",
       name: "Listing Example C",
       description: "my description goes here",
       tagParentA: "Parent Tag A",
@@ -42,7 +42,7 @@ const listingsData = [
     },
     {
         hero: "https://learnwebcode.github.io/json-example/images/cat-2.jpg",
-        type: "primary",
+        type: "colour primary",
         name: "Listing Example D",
         description: "my description goes here",
         tagParentA: "Parent Tag A",
@@ -53,7 +53,7 @@ const listingsData = [
       },
       {
         hero: "https://learnwebcode.github.io/json-example/images/cat-2.jpg",
-        type: "secondary",
+        type: "colour secondary",
         name: "Listing Example D",
         description: "my description goes here",
         tagParentA: "Parent Tag A",
@@ -64,7 +64,7 @@ const listingsData = [
       },
       {
         hero: "https://learnwebcode.github.io/json-example/images/cat-2.jpg",
-        type: "secondary",
+        type: "colour secondary",
         name: "Listing Example E",
         description: "my description goes here",
         tagParentA: "Parent Tag A",
@@ -99,10 +99,11 @@ const listingsData = [
             ${listing.hero ? `<img class="listing-hero" src="${listing.hero}">` : ""}
           </div>
           <div class="title-wrapper">
+            <i data-feather="image" class="image"></i>
             <h3 class="listing-name">${listing.name}</h3>
             ${listing.description ? `<p>${listing.description}</p>` : ""}
 
-            ${listing.tagParentA ? `<div class="tag parent">${listing.tagParentA} 
+            ${listing.tagParentA ? `<div class="tag parent"> <i data-feather="tag"></i> ${listing.tagParentA} 
                 ${listing.tagChildA ? childTagsA(listing.tagChildA) : ""} 
             </div>` : ""}
 
