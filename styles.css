@@ -10,15 +10,15 @@ img
 
 html
 {
-  background: #f2f2f2;
+  background: linear-gradient(90deg, var(--blue-100) 0%, var(--green-100) 100%);
+  background-attachment: fixed;
+  margin: 0;
 }
-
 
 body 
 {
   font-family: sans-serif;
 }
-  
 
 #content
 {
@@ -26,14 +26,36 @@ body
   margin: 0 auto;
 }
 
+/* Section Header ----------------------------- */
+
+.section-header
+{
+  background: none !important;
+  box-shadow: none !important;
+  border-bottom: 1px solid #eee;
+}
+
+.section-header .details-wrapper
+{
+  display: none;
+}
+  
+/* Listings --------------------------------- */
+
+
 .listing-wrapper
 {
   display: flex;
   flex-direction: column;
-  margin-block: 20px;
+  margin-block: var(--size-4);
   background: #ffffff;
   box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.1);
   border-radius: 12px;
+}
+
+.listing-wrapper.secondary
+{
+  margin-left: var(--size-4);
 }
 
 .header-wrapper
@@ -65,7 +87,10 @@ body
 .title-wrapper .tag
 {
   display: inline-block;
-  padding: 2px 6px;
+  justify-content: center;
+  align-items: center;
+  font-size: var(--text-xsmall);
+  padding: var(--size-0-5) var(--size-1);
   border-radius: 2px;
   background: rgba(0, 0, 0, 0.2);
   color: black;
@@ -73,5 +98,6 @@ body
 
 .details-wrapper
 {
+  display: none;
   border: 1px solid #eee;
 }

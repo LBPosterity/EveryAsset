@@ -1,0 +1,356 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;500;900&display=swap');
+
+*
+{
+  box-sizing: border-box;
+  margin: 0;
+  margin-block: 0;
+  margin-inline: 0;
+}
+
+html
+{
+  font-size: 62.5% !important;
+  font-family: var(--family-body);
+  font-size: var(--text-base);
+}
+
+hr
+{
+  margin-block: 5%;
+}
+
+:root
+{
+  
+  /*-- Master variables -------*/
+  
+  --size-base: 0.8rem;
+  --text-base: 1.6rem; /* base text size */
+  --text-ratio: 0.4rem; /*ratio - heading to base*/
+  --line-height-base: 1.6; 
+  
+  --family-body: 'Lato', sans-serif;
+  --body-weight: normal;
+  --family-heading: 'Lato', sans-serif;
+  --heading-weight: 900;
+  
+  --radius-base: var(--size-1);
+  
+
+  /* Typography --------------------------------*/
+  
+
+  --text-xsmall: calc(var(--text-base)*0.66); 
+  --text-small: calc(var(--text-base)*0.875); 
+  --text-large: calc(var(--text-base)*1.2); 
+  --line-height-1: 1;
+
+  
+  /* Seed Colours ---------------------------------*/
+  
+  --grey-h: 200deg; --grey-s: 12%; --grey-l: 50%;
+  --green-h: 160deg; --green-s: 55%; --green-l: 50%;
+  --blue-h: 200deg; --blue-s: 66%; --blue-l: 50%;
+  --red-h: 350deg; --red-s: 50%; --red-l: 50%;
+  --yellow-h: 60deg; --yellow-s: 50%; --yellow-l: 50%;
+  --orange-h: 35deg; --orange-s: 50%; --orange-l: 50%;
+  --purple-h: 260deg; --purple-s: 50%; --purple-l: 50%;
+  
+  
+   /* Shadows ---------------------------------*/
+  
+  --shadow-sm: 0px 2px 4px var(--grey-op10),
+               0px 0px 8px var(--grey-op10);
+  --shadow-md: 0px 2px 3px var(--grey-op10),
+               0px 2px 8px var(--grey-op10),
+               0px 4px 16px var(--grey-op10);
+  --shadow-lg: 0px 2px 4px var(--grey-op10),
+               0px 0px 8px var(--grey-op10),
+               0px 16px 24px var(--grey-op10);
+  --shadow-xl: 0px 2px 4px var(--grey-op10),
+               0px 8px 16px var(--grey-op20),
+               0px 0px 32px var(--grey-op10);
+  
+  
+ /* Radius ---------------------------------*/
+  
+  --radius-sm: calc(var(--radius-base) *0.5);
+  --radius-md: calc(var(--radius-base) *1);
+  --radius-lg: calc(var(--radius-base) *2);
+  --radius-rounded: 9999rem;
+  --radius-default: var(--radius-md);
+
+  
+  /*-- Sizing ---------------------------------*/
+  
+  --size-0-5: calc(var(--size-base)*0.5);
+  --size-1: var(--size-base);
+  --size-2: calc(var(--size-base)*2);
+  --size-3: calc(var(--size-base)*3);
+  --size-4: calc(var(--size-base)*4);
+  --size-5: calc(var(--size-base)*5);
+  --size-6: calc(var(--size-base)*6);
+  --size-7: calc(var(--size-base)*7);
+  --size-8: calc(var(--size-base)*8);
+  --size-9: calc(var(--size-base)*9);
+  --size-10: calc(var(--size-base)*10);
+  --size-11: calc(var(--size-base)*11);
+  --size-12: calc(var(--size-base)*12);
+  --size-13: calc(var(--size-base)*13);
+  --size-14: calc(var(--size-base)*14);
+  --size-15: calc(var(--size-base)*15);
+  --size-16: calc(var(--size-base)*16);
+  --size-17: calc(var(--size-base)*17);
+  --size-18: calc(var(--size-base)*18);
+  --size-19: calc(var(--size-base)*19);
+  --size-20: calc(var(--size-base)*20);
+  --size-21: calc(var(--size-base)*21);
+  --size-22: calc(var(--size-base)*22);
+  --size-23: calc(var(--size-base)*23);
+  --size-24: calc(var(--size-base)*24);
+  --size-25: calc(var(--size-base)*25);
+  --size-26: calc(var(--size-base)*26);
+  --size-27: calc(var(--size-base)*27);
+  --size-28: calc(var(--size-base)*28);
+  --size-29: calc(var(--size-base)*29);
+  --size-30: calc(var(--size-base)*30);
+  
+  /*-- Colours --*/
+  
+  --grey-50: hsl(var(--grey-h) calc(var(--grey-s)*1.5) calc(var(--grey-l)*1.925));
+  --grey-100: hsl(var(--grey-h) calc(var(--grey-s)*1.5) calc(var(--grey-l)*1.85));
+  --grey-150: hsl(var(--grey-h) calc(var(--grey-s)*1.5) calc(var(--grey-l)*1.75));
+  --grey-200: hsl(var(--grey-h) calc(var(--grey-s)*1.5) calc(var(--grey-l)*1.65));
+  --grey-250: hsl(var(--grey-h) var(--grey-s) calc(var(--grey-l)*1.5));  
+  --grey-300: hsl(var(--grey-h) var(--grey-s) calc(var(--grey-l)*1.4));
+  --grey-350: hsl(var(--grey-h) var(--grey-s) calc(var(--grey-l)*1.3));  
+  --grey-400: hsl(var(--grey-h) var(--grey-s) calc(var(--grey-l)*1.2));
+  --grey-450: hsl(var(--grey-h) var(--grey-s) calc(var(--grey-l)*1.15));  
+  --grey-500: hsl(var(--grey-h) var(--grey-s) var(--grey-l));
+  --grey-550: hsl(var(--grey-h) var(--grey-s) calc(var(--grey-l)*0.9));  
+  --grey-600: hsl(var(--grey-h) var(--grey-s) calc(var(--grey-l)*0.8));
+  --grey-650: hsl(var(--grey-h) var(--grey-s) calc(var(--grey-l)*0.7));  
+  --grey-700: hsl(var(--grey-h) var(--grey-s) calc(var(--grey-l)*0.6));
+  --grey-750: hsl(var(--grey-h) var(--grey-s) calc(var(--grey-l)*0.5));  
+  --grey-800: hsl(var(--grey-h) var(--grey-s) calc(var(--grey-l)*0.4));
+  --grey-850: hsl(var(--grey-h) var(--grey-s) calc(var(--grey-l)*0.3));  
+  --grey-900: hsl(var(--grey-h) var(--grey-s) calc(var(--grey-l)*0.2));
+  --grey-950: hsl(var(--grey-h) var(--grey-s) calc(var(--grey-l)*0.15));
+  
+  --grey-op10: hsla(var(--grey-h) var(--grey-s) var(--grey-l) / 0.1);
+  --grey-op20: hsla(var(--grey-h) var(--grey-s) var(--grey-l) / 0.2);
+  --grey-op30: hsla(var(--grey-h) var(--grey-s) var(--grey-l) / 0.3);
+  --grey-op40: hsla(var(--grey-h) var(--grey-s) var(--grey-l) / 0.4);
+  --grey-op50: hsla(var(--grey-h) var(--grey-s) var(--grey-l) / 0.5);
+  --grey-op60: hsla(var(--grey-h) var(--grey-s) var(--grey-l) / 0.6);
+  --grey-op70: hsla(var(--grey-h) var(--grey-s) var(--grey-l) / 0.7);
+  --grey-op80: hsla(var(--grey-h) var(--grey-s) var(--grey-l) / 0.8);
+  --grey-op90: hsla(var(--grey-h) var(--grey-s) var(--grey-l) / 0.9);
+  
+  --green-50: hsl(var(--green-h) var(--green-s) calc(var(--green-l)*1.925));
+  --green-100: hsl(var(--green-h) var(--green-s) calc(var(--green-l)*1.85));
+  --green-150: hsl(var(--green-h) var(--green-s) calc(var(--green-l)*1.75));
+  --green-200: hsl(var(--green-h) var(--green-s) calc(var(--green-l)*1.65));
+  --green-250: hsl(var(--green-h) var(--green-s) calc(var(--green-l)*1.5));  
+  --green-300: hsl(var(--green-h) var(--green-s) calc(var(--green-l)*1.4));
+  --green-350: hsl(var(--green-h) var(--green-s) calc(var(--green-l)*1.3));  
+  --green-400: hsl(var(--green-h) var(--green-s) calc(var(--green-l)*1.2));
+  --green-450: hsl(var(--green-h) var(--green-s) calc(var(--green-l)*1.15));  
+  --green-500: hsl(var(--green-h) var(--green-s) var(--green-l));
+  --green-550: hsl(var(--green-h) var(--green-s) calc(var(--green-l)*0.9));  
+  --green-600: hsl(var(--green-h) var(--green-s) calc(var(--green-l)*0.8));
+  --green-650: hsl(var(--green-h) var(--green-s) calc(var(--green-l)*0.7));  
+  --green-700: hsl(var(--green-h) var(--green-s) calc(var(--green-l)*0.6));
+  --green-750: hsl(var(--green-h) var(--green-s) calc(var(--green-l)*0.5));  
+  --green-800: hsl(var(--green-h) var(--green-s) calc(var(--green-l)*0.4));
+  --green-850: hsl(var(--green-h) var(--green-s) calc(var(--green-l)*0.3));  
+  --green-900: hsl(var(--green-h) var(--green-s) calc(var(--green-l)*0.2));
+  --green-950: hsl(var(--green-h) var(--green-s) calc(var(--green-l)*0.15));
+  
+  --blue-50: hsl(var(--blue-h) var(--blue-s) calc(var(--blue-l)*1.9));
+  --blue-100: hsl(var(--blue-h) var(--blue-s) calc(var(--blue-l)*1.85));
+  --blue-150: hsl(var(--blue-h) var(--blue-s) calc(var(--blue-l)*1.75));
+  --blue-200: hsl(var(--blue-h) var(--blue-s) calc(var(--blue-l)*1.65));
+  --blue-250: hsl(var(--blue-h) var(--blue-s) calc(var(--blue-l)*1.5));  
+  --blue-300: hsl(var(--blue-h) var(--blue-s) calc(var(--blue-l)*1.4));
+  --blue-350: hsl(var(--blue-h) var(--blue-s) calc(var(--blue-l)*1.3));  
+  --blue-400: hsl(var(--blue-h) var(--blue-s) calc(var(--blue-l)*1.2));
+  --blue-450: hsl(var(--blue-h) var(--blue-s) calc(var(--blue-l)*1.15));  
+  --blue-500: hsl(var(--blue-h) var(--blue-s) var(--blue-l));
+  --blue-550: hsl(var(--blue-h) var(--blue-s) calc(var(--blue-l)*0.9));  
+  --blue-600: hsl(var(--blue-h) var(--blue-s) calc(var(--blue-l)*0.8));
+  --blue-650: hsl(var(--blue-h) var(--blue-s) calc(var(--blue-l)*0.7));  
+  --blue-700: hsl(var(--blue-h) var(--blue-s) calc(var(--blue-l)*0.6));
+  --blue-750: hsl(var(--blue-h) var(--blue-s) calc(var(--blue-l)*0.5));  
+  --blue-800: hsl(var(--blue-h) var(--blue-s) calc(var(--blue-l)*0.4));
+  --blue-850: hsl(var(--blue-h) var(--blue-s) calc(var(--blue-l)*0.3));  
+  --blue-900: hsl(var(--blue-h) var(--blue-s) calc(var(--blue-l)*0.2));
+  --blue-950: hsl(var(--blue-h) var(--blue-s) calc(var(--blue-l)*0.15));
+ 
+  --red-50: hsl(var(--red-h) var(--red-s) calc(var(--red-l)*1.925));
+  --red-100: hsl(var(--red-h) var(--red-s) calc(var(--red-l)*1.85));
+  --red-150: hsl(var(--red-h) var(--red-s) calc(var(--red-l)*1.75));
+  --red-200: hsl(var(--red-h) var(--red-s) calc(var(--red-l)*1.65));
+  --red-250: hsl(var(--red-h) var(--red-s) calc(var(--red-l)*1.5));  
+  --red-300: hsl(var(--red-h) var(--red-s) calc(var(--red-l)*1.4));
+  --red-350: hsl(var(--red-h) var(--red-s) calc(var(--red-l)*1.3));  
+  --red-400: hsl(var(--red-h) var(--red-s) calc(var(--red-l)*1.2));
+  --red-450: hsl(var(--red-h) var(--red-s) calc(var(--red-l)*1.15));  
+  --red-500: hsl(var(--red-h) var(--red-s) var(--red-l));
+  --red-550: hsl(var(--red-h) var(--red-s) calc(var(--red-l)*0.9));  
+  --red-600: hsl(var(--red-h) var(--red-s) calc(var(--red-l)*0.8));
+  --red-650: hsl(var(--red-h) var(--red-s) calc(var(--red-l)*0.7));  
+  --red-700: hsl(var(--red-h) var(--red-s) calc(var(--red-l)*0.6));
+  --red-750: hsl(var(--red-h) var(--red-s) calc(var(--red-l)*0.5));  
+  --red-800: hsl(var(--red-h) var(--red-s) calc(var(--red-l)*0.4));
+  --red-850: hsl(var(--red-h) var(--red-s) calc(var(--red-l)*0.3));  
+  --red-900: hsl(var(--red-h) var(--red-s) calc(var(--red-l)*0.2));
+  --red-950: hsl(var(--red-h) var(--red-s) calc(var(--red-l)*0.15));
+  
+  --yellow-50: hsl(var(--yellow-h) var(--yellow-s) calc(var(--yellow-l)*1.925));
+  --yellow-100: hsl(var(--yellow-h) var(--yellow-s) calc(var(--yellow-l)*1.85));
+  --yellow-150: hsl(var(--yellow-h) var(--yellow-s) calc(var(--yellow-l)*1.75));
+  --yellow-200: hsl(var(--yellow-h) var(--yellow-s) calc(var(--yellow-l)*1.65));
+  --yellow-250: hsl(var(--yellow-h) var(--yellow-s) calc(var(--yellow-l)*1.5));  
+  --yellow-300: hsl(var(--yellow-h) var(--yellow-s) calc(var(--yellow-l)*1.4));
+  --yellow-350: hsl(var(--yellow-h) var(--yellow-s) calc(var(--yellow-l)*1.3));  
+  --yellow-400: hsl(var(--yellow-h) var(--yellow-s) calc(var(--yellow-l)*1.2));
+  --yellow-450: hsl(var(--yellow-h) var(--yellow-s) calc(var(--yellow-l)*1.15)); 
+  --yellow-500: hsl(var(--yellow-h) var(--yellow-s) var(--yellow-l));
+  --yellow-550: hsl(var(--yellow-h) var(--yellow-s) calc(var(--yellow-l)*0.9));  
+  --yellow-600: hsl(var(--yellow-h) var(--yellow-s) calc(var(--yellow-l)*0.8));
+  --yellow-650: hsl(var(--yellow-h) var(--yellow-s) calc(var(--yellow-l)*0.7));  
+  --yellow-700: hsl(var(--yellow-h) var(--yellow-s) calc(var(--yellow-l)*0.6));
+  --yellow-750: hsl(var(--yellow-h) var(--yellow-s) calc(var(--yellow-l)*0.5));  
+  --yellow-800: hsl(var(--yellow-h) var(--yellow-s) calc(var(--yellow-l)*0.4));
+  --yellow-850: hsl(var(--yellow-h) var(--yellow-s) calc(var(--yellow-l)*0.3));  
+  --yellow-900: hsl(var(--yellow-h) var(--yellow-s) calc(var(--yellow-l)*0.2));
+  --yellow-950: hsl(var(--yellow-h) var(--yellow-s) calc(var(--yellow-l)*0.15));
+  
+  --orange-50: hsl(var(--orange-h) var(--orange-s) calc(var(--orange-l)*1.925));
+  --orange-100: hsl(var(--orange-h) var(--orange-s) calc(var(--orange-l)*1.85));
+  --orange-150: hsl(var(--orange-h) var(--orange-s) calc(var(--orange-l)*1.75));
+  --orange-200: hsl(var(--orange-h) var(--orange-s) calc(var(--orange-l)*1.65));
+  --orange-250: hsl(var(--orange-h) var(--orange-s) calc(var(--orange-l)*1.5));  
+  --orange-300: hsl(var(--orange-h) var(--orange-s) calc(var(--orange-l)*1.4));
+  --orange-350: hsl(var(--orange-h) var(--orange-s) calc(var(--orange-l)*1.3));  
+  --orange-400: hsl(var(--orange-h) var(--orange-s) calc(var(--orange-l)*1.2));
+  --orange-450: hsl(var(--orange-h) var(--orange-s) calc(var(--orange-l)*1.15)); 
+  --orange-500: hsl(var(--orange-h) var(--orange-s) var(--orange-l));
+  --orange-550: hsl(var(--orange-h) var(--orange-s) calc(var(--orange-l)*0.9));  
+  --orange-600: hsl(var(--orange-h) var(--orange-s) calc(var(--orange-l)*0.8));
+  --orange-650: hsl(var(--orange-h) var(--orange-s) calc(var(--orange-l)*0.7));  
+  --orange-700: hsl(var(--orange-h) var(--orange-s) calc(var(--orange-l)*0.6));
+  --orange-750: hsl(var(--orange-h) var(--orange-s) calc(var(--orange-l)*0.5));  
+  --orange-800: hsl(var(--orange-h) var(--orange-s) calc(var(--orange-l)*0.4));
+  --orange-850: hsl(var(--orange-h) var(--orange-s) calc(var(--orange-l)*0.3));  
+  --orange-900: hsl(var(--orange-h) var(--orange-s) calc(var(--orange-l)*0.2));
+  --orange-950: hsl(var(--orange-h) var(--orange-s) calc(var(--orange-l)*0.15));
+  
+  --purple-50: hsl(var(--purple-h) var(--purple-s) calc(var(--purple-l)*1.925));
+  --purple-100: hsl(var(--purple-h) var(--purple-s) calc(var(--purple-l)*1.85));
+  --purple-150: hsl(var(--purple-h) var(--purple-s) calc(var(--purple-l)*1.75));
+  --purple-200: hsl(var(--purple-h) var(--purple-s) calc(var(--purple-l)*1.65));
+  --purple-250: hsl(var(--purple-h) var(--purple-s) calc(var(--purple-l)*1.5));  
+  --purple-300: hsl(var(--purple-h) var(--purple-s) calc(var(--purple-l)*1.4));
+  --purple-350: hsl(var(--purple-h) var(--purple-s) calc(var(--purple-l)*1.3));  
+  --purple-400: hsl(var(--purple-h) var(--purple-s) calc(var(--purple-l)*1.2));
+  --purple-450: hsl(var(--purple-h) var(--purple-s) calc(var(--purple-l)*1.15)); 
+  --purple-500: hsl(var(--purple-h) var(--purple-s) var(--purple-l));
+  --purple-550: hsl(var(--purple-h) var(--purple-s) calc(var(--purple-l)*0.9));  
+  --purple-600: hsl(var(--purple-h) var(--purple-s) calc(var(--purple-l)*0.8));
+  --purple-650: hsl(var(--purple-h) var(--purple-s) calc(var(--purple-l)*0.7));  
+  --purple-700: hsl(var(--purple-h) var(--purple-s) calc(var(--purple-l)*0.6));
+  --purple-750: hsl(var(--purple-h) var(--purple-s) calc(var(--purple-l)*0.5));  
+  --purple-800: hsl(var(--purple-h) var(--purple-s) calc(var(--purple-l)*0.4));
+  --purple-850: hsl(var(--purple-h) var(--purple-s) calc(var(--purple-l)*0.3));  
+  --purple-900: hsl(var(--purple-h) var(--purple-s) calc(var(--purple-l)*0.2));
+  --purple-950: hsl(var(--purple-h) var(--purple-s) calc(var(--purple-l)*0.15));
+
+
+  
+}
+
+
+/* Scroll Bars ------------------------ */
+/* Scrollbar */
+::-webkit-scrollbar 
+{
+  width: 12px;
+}
+
+::-webkit-scrollbar-track 
+{
+  background: var(--grey-50);
+}
+
+::-webkit-scrollbar-thumb 
+{
+  background: var(--grey-200);
+    border-radius: 999px;
+}
+
+::-webkit-scrollbar-thumb:hover 
+{
+  background: var(--grey-300);
+}
+
+
+/*-- Typography Styles ---------------------------------*/
+
+
+/* Typography ------------------------*/
+
+body, p, label, ul, li, details, summary
+{
+    line-height: var(--line-height-base);
+    font-size: var(--text-base);
+    font-family: var(--family-body);
+    font-weight: var(--body-weight);
+    margin-block-end: 1.33ch;
+}
+
+p.small
+{
+  font-size: var(--text-small);
+}
+
+h1, h2, h3, h4, h5 
+{
+  line-height: calc(var(--line-height-base)*0.8);  
+  margin-block-end: 1.4ch;
+  font-family: var(--family-heading);
+  font-weight: var(--heading-weight);
+  color: var(--heading-color);
+}
+
+h1{font-size: calc(var(--text-base) + var(--text-ratio) *5);}
+h2{font-size: calc(var(--text-base) + var(--text-ratio) *4);}
+h3{font-size: calc(var(--text-base) + var(--text-ratio) *3);}
+h4{font-size: calc(var(--text-base) + var(--text-ratio) *2);}
+h5{font-size: calc(var(--text-base) + var(--text-ratio) *1);}
+
+
+
+
+
+/*-- Elevations --------------------------------------*/
+
+
+.shadow-sm { box-shadow: var(--shadow-sm); }
+
+.shadow-md { box-shadow: var(--shadow-md); }
+
+.shadow-lg { box-shadow: var(--shadow-lg); }
+
+.shadow-xl { box-shadow: var(--shadow-xl); }
+
+
+/*-- Radius --------------------------------------*/
+
+.radius-sm { border-radius: var(--radius-sm); }
+
+.radius-md { border-radius: var(--radius-md); }
+
+.radius-lg { border-radius: var(--radius-lg); }

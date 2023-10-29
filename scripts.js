@@ -1,6 +1,11 @@
 const listingsData = [
-    {
+  {
+    type: "section-header",
+    name: "Images"
+  },
+  {
       hero: "https://learnwebcode.github.io/json-example/images/cat-2.jpg",
+      type: "primary",
       name: "Listing Example A",
       description: "my description goes here",
       tagParentA: "Parent Tag A",
@@ -11,6 +16,7 @@ const listingsData = [
     },
     {
       hero: "https://learnwebcode.github.io/json-example/images/cat-2.jpg",
+      type: "secondary",
       name: "Listing Example B",
       description: "my description goes here",
       tagParentA: "Parent Tag A",
@@ -21,6 +27,7 @@ const listingsData = [
     },
     {
       hero: "https://learnwebcode.github.io/json-example/images/cat-2.jpg",
+      type: "secondary",
       name: "Listing Example C",
       description: "my description goes here",
       tagParentA: "Parent Tag A",
@@ -28,7 +35,44 @@ const listingsData = [
       tagParentB: "Parent Tag B",
       tagChildB: ["Child Tag A", "Child Tag B", "Child Tag C"],
       examples: "https://learnwebcode.github.io/json-example/images/dog-1.jpg"
-    }
+    },
+    {
+      type: "section-header",
+      name: "Colours"
+    },
+    {
+        hero: "https://learnwebcode.github.io/json-example/images/cat-2.jpg",
+        type: "primary",
+        name: "Listing Example D",
+        description: "my description goes here",
+        tagParentA: "Parent Tag A",
+        tagChildA: ["Child Tag A", "Child Tag B", "Child Tag C"],
+        tagParentB: "Parent Tag B",
+        tagChildB: ["Child Tag A", "Child Tag B", "Child Tag C"],
+        examples: "https://learnwebcode.github.io/json-example/images/dog-1.jpg"
+      },
+      {
+        hero: "https://learnwebcode.github.io/json-example/images/cat-2.jpg",
+        type: "secondary",
+        name: "Listing Example D",
+        description: "my description goes here",
+        tagParentA: "Parent Tag A",
+        tagChildA: ["Child Tag A", "Child Tag B", "Child Tag C"],
+        tagParentB: "Parent Tag B",
+        tagChildB: ["Child Tag A", "Child Tag B", "Child Tag C"],
+        examples: "https://learnwebcode.github.io/json-example/images/dog-1.jpg"
+      },
+      {
+        hero: "https://learnwebcode.github.io/json-example/images/cat-2.jpg",
+        type: "secondary",
+        name: "Listing Example E",
+        description: "my description goes here",
+        tagParentA: "Parent Tag A",
+        tagChildA: ["Child Tag A", "Child Tag B", "Child Tag C"],
+        tagParentB: "Parent Tag B",
+        tagChildB: ["Child Tag A", "Child Tag B", "Child Tag C"],
+        examples: "https://learnwebcode.github.io/json-example/images/dog-1.jpg"
+      }
   ];
   
   
@@ -49,10 +93,10 @@ const listingsData = [
   
   function listingTemplate(listing) {
     return `
-      <div class="listing-wrapper">
+      <div class="listing-wrapper ${listing.type}">
         <div class="header-wrapper">
           <div class="hero-wrapper">
-            <img class="listing-hero" src="${listing.hero}">
+            ${listing.hero ? `<img class="listing-hero" src="${listing.hero}">` : ""}
           </div>
           <div class="title-wrapper">
             <h3 class="listing-name">${listing.name}</h3>
@@ -79,4 +123,17 @@ const listingsData = [
   
 
   document.getElementById("app").innerHTML = `${listingsData.map(listingTemplate).join("")}`;
+
+  
+    // Main Menu Style Dropdown ----------------------
+
+    $(document).ready(function (){
+
+      $(".layout-control").click(function(){
+        $("html").removeClass("layout");
+        $(".style-control").removeClass("active");
+        $(this).addClass("active");
+      });
+
+    });
   
