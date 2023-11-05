@@ -101,6 +101,7 @@ const listingsData = [
           <div class="title-wrapper">
             <i data-feather="image" class="image"></i>
             <h3 class="listing-name">${listing.name}</h3>
+            <button class="expand-this">Expand</button>
             ${listing.description ? `<p>${listing.description}</p>` : ""}
 
             ${listing.tagParentA ? `<div class="tag parent"> <i data-feather="tag"></i> ${listing.tagParentA} 
@@ -131,9 +132,14 @@ const listingsData = [
     $(document).ready(function (){
 
       $(".layout-control").click(function(){
-        $("html").removeClass("layout");
+        $("html").removeClass("layout-default, layout-compact, layout-expand");
         $(".style-control").removeClass("active");
         $(this).addClass("active");
+      });
+
+      $(".expand-this").click(function(){
+        $(this).closest(".listing-wrapper").toggleClass("expanded");
+        $(this).toggleClass("active");
       });
 
     });
