@@ -98,19 +98,28 @@ const listingsData = [
           <div class="hero-wrapper">
             ${listing.hero ? `<img class="listing-hero" src="${listing.hero}">` : ""}
           </div>
-          <div class="title-wrapper">
-            <i data-feather="image" class="image"></i>
-            <h3 class="listing-name">${listing.name}</h3>
-            <button class="expand-this">Expand</button>
+          <div class="content-wrapper">
+            <div class="title-wrapper">
+              <div class="title">
+                <i data-feather="image" class="image"></i>
+                <h3 class="listing-name">${listing.name}</h3>
+              </div>
+              <button class="expand-this">Expand</button>
+            </div>
+            <div class="description-wrapper">
             ${listing.description ? `<p>${listing.description}</p>` : ""}
+            </div>
 
-            ${listing.tagParentA ? `<div class="tag parent"> <i data-feather="tag"></i> ${listing.tagParentA} 
-                ${listing.tagChildA ? childTagsA(listing.tagChildA) : ""} 
-            </div>` : ""}
+            <div class="tags-wrapper">
+              ${listing.tagParentA ? `<div class="tag parent"> <i data-feather="tag"></i> ${listing.tagParentA} 
+                  ${listing.tagChildA ? childTagsA(listing.tagChildA) : ""} 
+              </div>` : ""}
 
-            ${listing.tagParentB ? `<div class="tag parent">${listing.tagParentB} 
-              ${listing.tagChildB ? childTagsB(listing.tagChildB) : ""} 
-            </div>` : ""}
+              ${listing.tagParentB ? `<div class="tag parent"> <i data-feather="tag"></i> ${listing.tagParentB} 
+                ${listing.tagChildB ? childTagsB(listing.tagChildB) : ""} 
+              </div>` : ""}
+            </div>
+            
           </div>
         </div>
 
@@ -129,18 +138,24 @@ const listingsData = [
   
     // Main Menu Style Dropdown ----------------------
 
-    $(document).ready(function (){
+$(document).ready(function (){
 
-      $(".layout-control").click(function(){
-        $("html").removeClass("layout-default, layout-compact, layout-expand");
-        $(".style-control").removeClass("active");
-        $(this).addClass("active");
-      });
 
-      $(".expand-this").click(function(){
-        $(this).closest(".listing-wrapper").toggleClass("expanded");
-        $(this).toggleClass("active");
-      });
+  $(".layout-control").click( function() {
 
+    $("html").removeClass("layout-default layout-compact layout-expanded");
+    $(".layout-control").removeClass("active");
+
+        var newwclass = $(this).attr("id");
+     $("html").toggleClass(newwclass);
+     $(this).addClass("active");
+   });
+
+    $(".expand-this").click(function(){
+      $(this).closest(".listing-wrapper").toggleClass("expanded");
+      $(this).toggleClass("active");
+      $("html").toggleClass("no-scroll");
     });
+
+});
   

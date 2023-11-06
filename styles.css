@@ -1,11 +1,13 @@
 *
 {
   box-sizing: border-box;
+  transition: 0.4s ease-in-out;
 }
 
 img
 {
-  max-width: 200px;
+  display: block;
+  width: 100%;
 }
 
 html
@@ -15,9 +17,16 @@ html
   margin: 0;
 }
 
+.no-scroll html,
+.no-scroll body
+{
+  overflow-y: hidden;
+}
+
 body 
 {
   font-family: sans-serif;
+  margin-block-end: 33vh;
 }
 
 #content
@@ -25,6 +34,7 @@ body
   width: min(800px, 90%);
   margin: 0 auto;
 }
+
 
 /* Section Header ----------------------------- */
 
@@ -35,11 +45,27 @@ body
   border-bottom: 1px solid #eee;
 }
 
-.section-header .details-wrapper
+.section-header .hero-wrapper,
+.section-header .details-wrapper,
+.section-header .expand-this
 {
   display: none;
 }
   
+header
+{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: var(--size-3) var(--size-4);
+}
+
+.layout-control.active
+{
+  border: 2px solid mediumseagreen;
+}
+
+
 /* Listings --------------------------------- */
 
 
@@ -52,16 +78,51 @@ body
   box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.1);
   border-radius: 12px;
   padding: var(--size-2);
-  transition: 2s;
 }
+
+
+
+
+
+/* Listings - Layout Style --------------------------------- */
+
+.layout-compact .listing-wrapper
+{
+  border: 2px solid purple;
+}
+
+.layout-default .listing-wrapper
+{
+
+}
+
+.layout-expanded .listing-wrapper
+{
+  border: 2px solid blue;
+}
+
+
+
+
+
+/* Listings - Expanded --------------------------------- */
+
 
 .listing-wrapper.expanded
 {
   position: fixed;
-  top: 2vh;
-  left: 2vw;
-  width: 90vw;
-  height: 90vh;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: calc(100vw - var(--size-4));
+  height: calc(100vh - var(--size-4));
+  border: 2px solid coral;
+  margin: 0 !important;
+}
+
+.listing-wrapper.expanded .hero-wrapper
+{
+  width: 400px;
 }
 
 .listing-wrapper.secondary
@@ -78,23 +139,53 @@ body
 
 .hero-wrapper
 {
-
+  width: 200px;
 }
 
 .title-wrapper
 {
   display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: var(--size-2);
+}
+
+.title-wrapper .title
+{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: var(--size-1);
+}
+
+.title-wrapper .title h3
+{
+  margin-block-end: 0 !important;
+}
+
+.content-wrapper
+{
+  display: flex;
   flex-direction: column;
+  justify-content: flex-start;
+  width: 100%;
   gap: 6px;
 }
 
-.title-wrapper .tag.parent
+.tags-wrapper
+{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+
+.tag.parent
 {
   display: inline-flex;
   gap: 4px;
 }
 
-.title-wrapper .tag
+.tag
 {
   display: inline-block;
   justify-content: center;
@@ -108,6 +199,16 @@ body
 
 .details-wrapper
 {
-  display: none;
-  border: 1px solid #eee;
+  height: 0;
+  overflow: hidden;
+  margin: 0;
+}
+
+.listing-wrapper.expanded .details-wrapper
+{
+  display: block;
+  height: auto;
+  margin-block: var(--size-4);
+  padding-top: var(--size-4);
+  border-top: 1px solid var(--grey-200);
 }
