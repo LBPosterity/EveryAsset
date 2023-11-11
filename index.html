@@ -9,17 +9,13 @@
   <title>Every Asset</title>
 
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-
-
-  <link rel="stylesheet" type="text/css" href="ds-primitives.css?ver=1.1" >
-  <link rel="stylesheet" type="text/css" href="ds-tokens.css?ver=1.1" >
-  <link rel="stylesheet" type="text/css" href="styles.css?ver=1.1" >
-
-
+ 
+  <link rel="stylesheet" type="text/css" href="ds-primitives.css">
+  <link rel="stylesheet" type="text/css" href="ds-tokens.css">
+  <link rel="stylesheet" type="text/css" href="styles.css">
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script> 
-
-  <script src="https://unpkg.com/feather-icons"></script>
+  <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
 
 
 </head>
@@ -27,26 +23,97 @@
     
 <body>
 
-  <header>
-    <div>Every Asset</div>
-    <div>
-      <button id="layout-compact" class="layout-control">Compact</button>
-      <button id="layout-default "class="layout-control active">Default</button>
-      <button id="layout-expanded" class="layout-control">Expanded</button>
+  <div class="section-wrapper">
+  
+    <div class="column-type">
+      <div class="listing">Images</div>
     </div>
-  </header>
-
-  <div id="content">
-    <div id="app"></div>
+    
+    <div class="section-inner">
+    
+    <div class="inner-wrapper">
+      <div class="column-parent">
+        <div id="list-image-content-parent"></div>
+      </div>
+      <div class="column-child">
+        <div id="list-image-content"></div>
+      </div>
+    </div>
+    
+      <div class="inner-wrapper">
+      <div class="column-parent">
+        <div id="list-logo-aspect-parent"></div>
+      </div>
+      <div class="column-child">
+        <div id="list-logo-aspect"></div>
+      </div>
+    </div>
+      
+    </div>
+    
+  </div>
+  
+  <div class="section-wrapper">
+    
+    <div class="column-type">
+      <div class="listing">Category</div>
+    </div>
+    
+    <div class="section-inner">
+    
+    <div class="inner-wrapper">
+      <div class="column-parent">
+        <div class="listing">Parent</div>
+      </div>
+      <div class="column-child">
+        <div class="listing">Listing</div>
+        <div class="listing">Listing</div>
+        <div class="listing">Listing</div>
+        <div class="listing">listing</div>
+        <div class="listing">Listing</div>
+        <div class="listing">Listing</div>
+        <div class="listing">Listing</div>
+        <div class="listing">listing</div>
+      </div>
+    </div>
+    
+      <div class="inner-wrapper">
+      <div class="column-parent">
+        <div class="listing">Parent</div>
+      </div>
+      <div class="column-child">
+        <div class="listing">Listing</div>
+        <div class="listing">Listing</div>
+        <div class="listing">Listing</div>
+        <div class="listing">listing</div>
+        <div class="listing">Listing</div>
+        <div class="listing">Listing</div>
+        <div class="listing">Listing</div>
+        <div class="listing">listing</div>
+      </div>
+    </div>
+      
+    </div>
+    
   </div>
 
-<script type="text/javascript" src="scripts.js"></script>
+
+    
+
+
+
+  <script type="text/javascript" src="scripts-data.js"></script>
+  <script type="text/javascript" src="scripts-template.js"></script>
+  <script type="text/javascript" src="scripts-ui.js"></script>
+
 
 <script>
   feather.replace()
 </script>
 
 </body>
+
+
 
 </html>
 
