@@ -28,8 +28,8 @@
           <div class="content-wrapper">
             <div class="title-wrapper">
               <div class="title">
-                <i data-feather="image" class="image"></i>
-                <h3 class="listing-name">${listing.name}</h3>
+                <i data-feather="${listing.icon}" class="image"></i>
+                <h5 class="listing-name">${listing.name}</h5>
               </div>
               <button class="expand-this">Expand</button>
             </div>
@@ -60,10 +60,10 @@
   }
   
 
-  document.getElementById("list-image-content-parent").innerHTML = `${DataImageContentParent.map(listingTemplate).join("")}`;
-  document.getElementById("list-image-content").innerHTML = `${DataImageContent.map(listingTemplate).join("")}`;
+  document.getElementById("list-image-full").innerHTML = `${DataImageFull.map(listingTemplate).join("")}`;
+  document.getElementById("list-image-colour").innerHTML = `${DataImageColour.map(listingTemplate).join("")}`;
 
-  document.getElementById("list-logo-aspect-parent").innerHTML = `${DataLogoAspectParent.map(listingTemplate).join("")}`;
+
   document.getElementById("list-logo-aspect").innerHTML = `${DataLogoAspect.map(listingTemplate).join("")}`;
 
   

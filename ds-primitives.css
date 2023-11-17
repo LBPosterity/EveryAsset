@@ -27,14 +27,14 @@ hr
   
   --size-base: 0.8rem;
   --text-base: 1.6rem; /* base text size */
-  --text-ratio: 0.4rem; /*ratio - heading to base*/
+  --text-ratio: 1.2; /*ratio - heading to base*/
   --line-height-base: 1.6; 
   --space-after-base: 1.33ch;
   
   --family-body: 'Lato', sans-serif;
   --body-weight: normal;
   --family-heading: 'Lato', sans-serif;
-  --heading-weight: 900;
+  --heading-weight: 800;
   
   --radius-base: var(--size-1);
   
@@ -47,6 +47,14 @@ hr
   --text-large: calc(var(--text-base)*1.2); 
   --line-height-1: 1;
   --space-after-heading: calc(var(--space-after-base) * 0.66);
+
+
+  --h1: calc(var(--h2) * var(--text-ratio));
+  --h2: calc(var(--h3) * var(--text-ratio));
+  --h3: calc(var(--h4) * var(--text-ratio));
+  --h4: calc(var(--h5) * var(--text-ratio));
+  --h5: calc(var(--h6) * var(--text-ratio));
+  --h6: calc(var(--text-base) * var(--text-ratio));
 
   
   /* Seed Colours ---------------------------------*/
@@ -318,7 +326,7 @@ p.small
   font-size: var(--text-small);
 }
 
-h1, h2, h3, h4, h5 
+h1, h2, h3, h4, h5, h6
 {
   line-height: calc(var(--line-height-base)*0.8);  
   margin-block-end: var(--space-after-heading);
@@ -327,13 +335,12 @@ h1, h2, h3, h4, h5
   color: var(--heading-color);
 }
 
-h1{font-size: calc(var(--text-base) + var(--text-ratio) *5);}
-h2{font-size: calc(var(--text-base) + var(--text-ratio) *4);}
-h3{font-size: calc(var(--text-base) + var(--text-ratio) *3);}
-h4{font-size: calc(var(--text-base) + var(--text-ratio) *2);}
-h5{font-size: calc(var(--text-base) + var(--text-ratio) *1);}
-
-
+h1{font-size: var(--h1);}
+h2{font-size: var(--h2);}
+h3{font-size: var(--h3);}
+h4{font-size: var(--h4);}
+h5{font-size: var(--h5);}
+h6{font-size: var(--h6);}
 
 
 
