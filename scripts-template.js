@@ -61,9 +61,11 @@
   
 
   document.getElementById("list-image-full").innerHTML = `${DataImageFull.map(listingTemplate).join("")}`;
+  document.getElementById("list-image-transparent").innerHTML = `${DataImageTransparent.map(listingTemplate).join("")}`;
   document.getElementById("list-image-colour").innerHTML = `${DataImageColour.map(listingTemplate).join("")}`;
 
 
   document.getElementById("list-logo-aspect").innerHTML = `${DataLogoAspect.map(listingTemplate).join("")}`;
+  document.getElementById("list-logo-detail").innerHTML = `${DataLogoDetail.map(listingTemplate).join("")}`;
 
   
