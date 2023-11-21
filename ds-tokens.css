@@ -6,7 +6,7 @@
   --transition-slow: 0.4s ease; 
   
   /* Colours */
-  --heading-color: var(--grey-900);
+  --heading-color: var(--grey-800);
   --body-color: var(--grey-700);
   --body-light-color: var(--grey-500);
   

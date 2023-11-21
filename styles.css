@@ -144,7 +144,7 @@ header
   content: '';
   position: absolute;
   top: var(--line-offest);
-  left: 0;
+  left: calc(var(--size-30) * -1);
   width: 1px;
   height: var(--line-size);
   background: var(--line-color);
@@ -156,7 +156,7 @@ header
   content: '';
   position: absolute;
   top: var(--line-offest);
-  right: 0;
+  left: 0;
   width: 1px;
   height: var(--line-size);
   background: var(--line-color);
@@ -166,6 +166,7 @@ header
 .parent-type > div
 {
   writing-mode: tb;  
+  margin-bottom: var(--size-4);
 }
 
 
@@ -178,6 +179,17 @@ header
 {
   position: relative;
   width: calc(var(--size-20) * 2);
+}
+
+.column-parent:before
+{
+  content: '';
+  position: absolute;
+  top: var(--line-offest);
+  left: calc(var(--size-2) * -1);
+  width: 1px;
+  height: var(--line-size);
+  background: var(--line-color);
 }
 
 .column-parent:after
@@ -208,12 +220,23 @@ header
   position: relative;
 }
 
-.column-child:after
+.column-child:before
 {
   content: '';
   position: absolute;
   top: var(--line-offest);
   right: calc(var(--size-2) * -1);
+  width: 1px;
+  height: var(--line-size);
+  background: var(--line-color);
+}
+
+.column-child:after
+{
+  content: '';
+  position: absolute;
+  top: var(--line-offest);
+  right: calc(var(--size-30) * -1);
   width: 1px;
   height: var(--line-size);
   background: var(--line-color);
@@ -234,11 +257,20 @@ header
   align-items: center;
   text-align: center;
   gap: var(--size-2);
-  padding: var(--size-2);
-  border-radius: var(--radius-sm);
-  background: var(--white);
-  box-shadow: var(--shadow-md);
+  padding: var(--size-6) var(--size-2);
+  border-bottom: 1px solid var(--grey-200);
   margin-bottom: var(--size-2);
+}
+
+.parent-listing h6
+{
+  margin-bottom: 0 !important;
+}
+
+.parent-listing svg
+{
+  width: calc(var(--size-4) *1.15);
+  height: auto;
 }
 
 @media screen and (max-width: 800px) {
@@ -254,13 +286,10 @@ header
 {
   display: flex;
   flex-direction: column;
-  margin-block: 0 var(--size-4);
-  background: #ffffff;
-  box-shadow: var(--shadow-md);
-  border-radius: var(--radius-sm);
-  padding: var(--size-2);
-  top: 0;
-  left: 0;
+  padding: var(--size-4) var(--size-2);
+  border-bottom: 1px solid var(--grey-200);
+  top: 50%;
+  left: 20%;
 }
 
 
@@ -301,6 +330,8 @@ header
   width: calc(100vw - var(--margin));
   height: calc(100vh - var(--margin));
   max-width: 1400px;
+  background: var(--white);
+  box-shadow: var(--shadow-lg);
   border-radius: var(--radius-lg);
   padding: var(--size-6);
   margin: 0 !important;

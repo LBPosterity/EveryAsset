@@ -2,7 +2,7 @@
 
 const DataImageFull = [
   {
-    hero: "https://learnwebcode.github.io/json-example/images/cat-2.jpg",
+    hero: "assets/image-full.png",
     type: "image",
     icon: "image",
     name: "Full Image",
@@ -10,10 +10,10 @@ const DataImageFull = [
       DetailDo: ["content here", "content here", "content here"],
       DetailDont: ["Full Colour", "B&W", "Desaturated"],
 
-    examples: "https://learnwebcode.github.io/json-example/images/dog-1.jpg"
+    examples: "assets/image-full.png"
   },
   {
-    hero: "https://learnwebcode.github.io/json-example/images/cat-2.jpg",
+    hero: "assets/image-full.png",
     type: "image",
     name: "Single Focal Point",
     icon: "image",
@@ -22,10 +22,10 @@ const DataImageFull = [
     DetailDo: ["Child Tag A", "Child Tag B", "Child Tag C"],
     DetailDont: ["Child Tag A", "Child Tag B", "Child Tag C"],
 
-    examples: "https://learnwebcode.github.io/json-example/images/dog-1.jpg"
+    examples: "assets/image-full.png"
   },
   {
-    hero: "https://learnwebcode.github.io/json-example/images/cat-2.jpg",
+    hero: "assets/image-full.png",
     type: "image",
     name: "Multi Point Focus",
     icon: "image",
@@ -34,10 +34,10 @@ const DataImageFull = [
     DetailDo: ["Child Tag A", "Child Tag B", "Child Tag C"],
     DetailDont: ["Child Tag A", "Child Tag B", "Child Tag C"],
 
-    examples: "https://learnwebcode.github.io/json-example/images/dog-1.jpg"
+    examples: "assets/image-full.png"
   },
   {
-    hero: "https://learnwebcode.github.io/json-example/images/cat-2.jpg",
+    hero: "assets/image-full.png",
     type: "image",
     name: "Texture",
     icon: "image",
@@ -46,10 +46,10 @@ const DataImageFull = [
     DetailDo: ["Multi Point", "Child Tag B", "Child Tag C"],
     DetailDont: ["Child Tag A", "Child Tag B", "Child Tag C"],
 
-    examples: "https://learnwebcode.github.io/json-example/images/dog-1.jpg"
+    examples: "assets/image-full.png"
   },
   {
-    hero: "https://learnwebcode.github.io/json-example/images/cat-2.jpg",
+    hero: "assets/image-full.png",
     type: "image",
     name: "Deep Focus",
     icon: "image",
@@ -58,7 +58,7 @@ const DataImageFull = [
     DetailDo: ["Multi Point", "Child Tag B", "Child Tag C"],
     DetailDont: ["Child Tag A", "Child Tag B", "Child Tag C"],
 
-    examples: "https://learnwebcode.github.io/json-example/images/dog-1.jpg"
+    examples: "assets/image-full.png"
   }
 ];
 
@@ -66,35 +66,35 @@ const DataImageFull = [
 
 const DataImageTransparent = [
   {
-    hero: "https://learnwebcode.github.io/json-example/images/cat-2.jpg",
+    hero: "assets/image-full.png",
     type: "image",
     name: "Float",
     icon: "image",
     description: "Any image with the contents extending to all edges of the frame.",
   },
   {
-    hero: "https://learnwebcode.github.io/json-example/images/cat-2.jpg",
+    hero: "assets/image-full.png",
     type: "image",
     name: "Bleeds 1 Edge",
     icon: "image",
     description: "An image with a clear single point of focus",
   },
   {
-    hero: "https://learnwebcode.github.io/json-example/images/cat-2.jpg",
+    hero: "assets/image-full.png",
     type: "image",
     name: "Bleeds 2 Connected Edges",
     icon: "image",
     description: "An image with multiple points of focus.",
   },
   {
-    hero: "https://learnwebcode.github.io/json-example/images/cat-2.jpg",
+    hero: "assets/image-full.png",
     type: "image",
     name: "Bleeds 2 Opposed Edges",
     icon: "image",
     description: "A close us image of a texture or surface.",
   },
   {
-    hero: "https://learnwebcode.github.io/json-example/images/cat-2.jpg",
+    hero: "assets/image-full.png",
     type: "image",
     name: "Bleeds 3 Edges",
     icon: "image",
@@ -106,42 +106,42 @@ const DataImageTransparent = [
 
 const DataImageColour = [
   {
-    hero: "https://learnwebcode.github.io/json-example/images/cat-2.jpg",
+    hero: "assets/image-full.png",
     type: "image",
     name: "Full Colour",
     icon: "image",
     description: "Any image with the contents extending to all edges of the frame.",
   },
   {
-    hero: "https://learnwebcode.github.io/json-example/images/cat-2.jpg",
+    hero: "assets/image-full.png",
     type: "image",
     name: "Black & White",
     icon: "image",
     description: "An image with a clear single point of focus",
   },
   {
-    hero: "https://learnwebcode.github.io/json-example/images/cat-2.jpg",
+    hero: "assets/image-full.png",
     type: "image",
     name: "Desaturated",
     icon: "image",
     description: "An image with multiple points of focus.",
   },
   {
-    hero: "https://learnwebcode.github.io/json-example/images/cat-2.jpg",
+    hero: "assets/image-full.png",
     type: "image",
     name: "2 Colour - Monochromatic",
     icon: "image",
     description: "A close us image of a texture or surface.",
   },
   {
-    hero: "https://learnwebcode.github.io/json-example/images/cat-2.jpg",
+    hero: "assets/image-full.png",
     type: "image",
     name: "3 Colours - Triadic",
     icon: "image",
     description: "An image with a deep & often multi point focus.",
   },
   {
-    hero: "https://learnwebcode.github.io/json-example/images/cat-2.jpg",
+    hero: "assets/image-full.png",
     type: "image",
     name: "4 Colours - Quadradic",
     icon: "image",
@@ -153,19 +153,19 @@ const DataImageColour = [
 
 const DataColours = [
   {
-      hero: "https://learnwebcode.github.io/json-example/images/cat-2.jpg",
+      hero: "assets/image-full.png",
       type: "colour",
       name: "Monochromtic",
       icon: "droplet",
       description: "Any image with the contents extending to all edges of the frame.",
     },
     {
-      hero: "https://learnwebcode.github.io/json-example/images/cat-2.jpg",
+      hero: "assets/image-full.png",
       type: "colour",
       name: "Duotone",
       icon: "droplet",
       description: "An image with a clear single point of focus",
-    },
+    }
   ];
   
 
@@ -174,16 +174,37 @@ const DataColours = [
 
 const DataLogoAspect = [
   {
-      hero: "https://learnwebcode.github.io/json-example/images/cat-2.jpg",
+      hero: "assets/image-full.png",
       type: "image",
-      name: "Logo A",
+      name: "Square",
       icon: "zap",
       description: "Any image with the contents extending to all edges of the frame.",
     },
     {
-      hero: "https://learnwebcode.github.io/json-example/images/cat-2.jpg",
+      hero: "assets/image-full.png",
       type: "image",
-      name: "Logo B",
+      name: "Average Landscape",
+      icon: "zap",
+      description: "An image with a clear single point of focus",
+    },
+    {
+      hero: "assets/image-full.png",
+      type: "image",
+      name: "Extreme Landscape",
+      icon: "zap",
+      description: "An image with a clear single point of focus",
+    },
+    {
+      hero: "assets/image-full.png",
+      type: "image",
+      name: "Average Portrait",
+      icon: "zap",
+      description: "An image with a clear single point of focus",
+    },
+    {
+      hero: "assets/image-full.png",
+      type: "image",
+      name: "Extreme Portrait",
       icon: "zap",
       description: "An image with a clear single point of focus",
     },
@@ -192,16 +213,23 @@ const DataLogoAspect = [
 
   const DataLogoDetail = [
     {
-        hero: "https://learnwebcode.github.io/json-example/images/cat-2.jpg",
+        hero: "assets/image-full.png",
         type: "image",
-        name: "Logo A",
+        name: "Low Detail",
         icon: "zap",
         description: "Any image with the contents extending to all edges of the frame.",
       },
       {
-        hero: "https://learnwebcode.github.io/json-example/images/cat-2.jpg",
+        hero: "assets/image-full.png",
         type: "image",
-        name: "Logo B",
+        name: "Medium Detail",
+        icon: "zap",
+        description: "An image with a clear single point of focus",
+      },
+      {
+        hero: "assets/image-full.png",
+        type: "image",
+        name: "High Detail",
         icon: "zap",
         description: "An image with a clear single point of focus",
       },
@@ -210,18 +238,39 @@ const DataLogoAspect = [
   
 const DataType = [
   {
-      hero: "https://learnwebcode.github.io/json-example/images/cat-2.jpg",
+      hero: "assets/image-full.png",
       type: "type",
       name: "Display",
       icon: "type",
       description: "Any image with the contents extending to all edges of the frame.",
     },
     {
-      hero: "https://learnwebcode.github.io/json-example/images/cat-2.jpg",
+      hero: "assets/image-full.png",
       type: "type",
-      name: "Sans Serif",
+      name: "Serif",
       icon: "type",
       description: "An image with a clear single point of focus",
     },
+    {
+    hero: "assets/image-full.png",
+    type: "type",
+    name: "Sans Serif",
+    icon: "type",
+    description: "Any image with the contents extending to all edges of the frame.",
+    },
+    {
+    hero: "assets/image-full.png",
+    type: "type",
+    name: "Monospace",
+    icon: "type",
+    description: "Any image with the contents extending to all edges of the frame.",
+    },
+    {
+      hero: "assets/image-full.png",
+      type: "type",
+      name: "Handwritten",
+      icon: "type",
+      description: "Any image with the contents extending to all edges of the frame.",
+      },
   ];
   

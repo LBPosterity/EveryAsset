@@ -27,7 +27,7 @@ hr
   
   --size-base: 0.8rem;
   --text-base: 1.6rem; /* base text size */
-  --text-ratio: 1.2; /*ratio - heading to base*/
+  --text-ratio: 1.15; /*ratio - heading to base*/
   --line-height-base: 1.6; 
   --space-after-base: 1.33ch;
   
@@ -46,8 +46,8 @@ hr
   --text-small: calc(var(--text-base)*0.875); 
   --text-large: calc(var(--text-base)*1.2); 
   --line-height-1: 1;
-  --space-after-heading: calc(var(--space-after-base) * 0.66);
 
+  --space-after-heading: calc(var(--space-after-base) * 0.66);
 
   --h1: calc(var(--h2) * var(--text-ratio));
   --h2: calc(var(--h3) * var(--text-ratio));
