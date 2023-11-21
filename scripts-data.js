@@ -7,11 +7,8 @@ const DataImageFull = [
     icon: "image",
     name: "Full Image",
     description: "Any image with the contents extending to all edges of the frame.",
-
-    tagParentA: "Aspect Ratio",
-      tagChildA: ["1:1", "> 16:9", "< 16:9"],
-    tagParentB: "Colour",
-      tagChildB: ["Full Colour", "B&W", "Desaturated"],
+      DetailDo: ["content here", "content here", "content here"],
+      DetailDont: ["Full Colour", "B&W", "Desaturated"],
 
     examples: "https://learnwebcode.github.io/json-example/images/dog-1.jpg"
   },
@@ -22,10 +19,8 @@ const DataImageFull = [
     icon: "image",
     description: "An image with a clear single point of focus",
 
-    tagParentA: "Parent Tag A",
-    tagChildA: ["Child Tag A", "Child Tag B", "Child Tag C"],
-    tagParentB: "Parent Tag B",
-    tagChildB: ["Child Tag A", "Child Tag B", "Child Tag C"],
+    DetailDo: ["Child Tag A", "Child Tag B", "Child Tag C"],
+    DetailDont: ["Child Tag A", "Child Tag B", "Child Tag C"],
 
     examples: "https://learnwebcode.github.io/json-example/images/dog-1.jpg"
   },
@@ -36,10 +31,8 @@ const DataImageFull = [
     icon: "image",
     description: "An image with multiple points of focus.",
 
-    tagParentA: "Parent Tag A",
-    tagChildA: ["Child Tag A", "Child Tag B", "Child Tag C"],
-    tagParentB: "Parent Tag B",
-    tagChildB: ["Child Tag A", "Child Tag B", "Child Tag C"],
+    DetailDo: ["Child Tag A", "Child Tag B", "Child Tag C"],
+    DetailDont: ["Child Tag A", "Child Tag B", "Child Tag C"],
 
     examples: "https://learnwebcode.github.io/json-example/images/dog-1.jpg"
   },
@@ -50,10 +43,8 @@ const DataImageFull = [
     icon: "image",
     description: "A close us image of a texture or surface.",
 
-    tagParentA: "Focus",
-    tagChildA: ["Multi Point", "Child Tag B", "Child Tag C"],
-    tagParentB: "Parent Tag B",
-    tagChildB: ["Child Tag A", "Child Tag B", "Child Tag C"],
+    DetailDo: ["Multi Point", "Child Tag B", "Child Tag C"],
+    DetailDont: ["Child Tag A", "Child Tag B", "Child Tag C"],
 
     examples: "https://learnwebcode.github.io/json-example/images/dog-1.jpg"
   },
@@ -64,10 +55,8 @@ const DataImageFull = [
     icon: "image",
     description: "An image with a deep & often multi point focus.",
 
-    tagParentA: "Focus",
-    tagChildA: ["Multi Point", "Child Tag B", "Child Tag C"],
-    tagParentB: "Parent Tag B",
-    tagChildB: ["Child Tag A", "Child Tag B", "Child Tag C"],
+    DetailDo: ["Multi Point", "Child Tag B", "Child Tag C"],
+    DetailDont: ["Child Tag A", "Child Tag B", "Child Tag C"],
 
     examples: "https://learnwebcode.github.io/json-example/images/dog-1.jpg"
   }
@@ -140,25 +129,47 @@ const DataImageColour = [
   {
     hero: "https://learnwebcode.github.io/json-example/images/cat-2.jpg",
     type: "image",
-    name: "Monochromatic",
+    name: "2 Colour - Monochromatic",
     icon: "image",
     description: "A close us image of a texture or surface.",
   },
   {
     hero: "https://learnwebcode.github.io/json-example/images/cat-2.jpg",
     type: "image",
-    name: "Triadic",
+    name: "3 Colours - Triadic",
     icon: "image",
     description: "An image with a deep & often multi point focus.",
   },
   {
     hero: "https://learnwebcode.github.io/json-example/images/cat-2.jpg",
     type: "image",
-    name: "Quadradic",
+    name: "4 Colours - Quadradic",
     icon: "image",
     description: "An image with a deep & often multi point focus.",
   }
 ];
+
+
+
+const DataColours = [
+  {
+      hero: "https://learnwebcode.github.io/json-example/images/cat-2.jpg",
+      type: "colour",
+      name: "Monochromtic",
+      icon: "droplet",
+      description: "Any image with the contents extending to all edges of the frame.",
+    },
+    {
+      hero: "https://learnwebcode.github.io/json-example/images/cat-2.jpg",
+      type: "colour",
+      name: "Duotone",
+      icon: "droplet",
+      description: "An image with a clear single point of focus",
+    },
+  ];
+  
+
+
   
 
 const DataLogoAspect = [
@@ -196,4 +207,21 @@ const DataLogoAspect = [
       },
     ];
     
+  
+const DataType = [
+  {
+      hero: "https://learnwebcode.github.io/json-example/images/cat-2.jpg",
+      type: "type",
+      name: "Display",
+      icon: "type",
+      description: "Any image with the contents extending to all edges of the frame.",
+    },
+    {
+      hero: "https://learnwebcode.github.io/json-example/images/cat-2.jpg",
+      type: "type",
+      name: "Sans Serif",
+      icon: "type",
+      description: "An image with a clear single point of focus",
+    },
+  ];
   

@@ -1,13 +1,13 @@
 
   function childTagsA(childTagsA) {
     return `
-      ${childTagsA.map(tags => `<div class="tag">${tags}</div>`).join("")}
+      ${childTagsA.map(tags => `<li>${tags}</li>`).join("")}
     `;
   }
 
   function childTagsB(childTagsB) {
     return `
-      ${childTagsB.map(tags => `<div class="tag">${tags}</div>`).join("")}
+      ${childTagsB.map(tags => `<li>${tags}<li>`).join("")}
     `;
   }
 
@@ -28,23 +28,13 @@
           <div class="content-wrapper">
             <div class="title-wrapper">
               <div class="title">
-                <i data-feather="${listing.icon}" class="image"></i>
+                <i data-feather="${listing.icon}"></i>
                 <h5 class="listing-name">${listing.name}</h5>
               </div>
-              <button class="expand-this">Expand</button>
+              <button class="expand-this">Expand<i data-feather="maximize-2"></i></button>
             </div>
             <div class="description-wrapper">
             ${listing.description ? `<p>${listing.description}</p>` : ""}
-            </div>
-
-            <div class="tags-wrapper">
-              ${listing.tagParentA ? `<div class="tag parent"> <i data-feather="tag"></i> ${listing.tagParentA} 
-                  ${listing.tagChildA ? childTagsA(listing.tagChildA) : ""} 
-              </div>` : ""}
-
-              ${listing.tagParentB ? `<div class="tag parent"> <i data-feather="tag"></i> ${listing.tagParentB} 
-                ${listing.tagChildB ? childTagsB(listing.tagChildB) : ""} 
-              </div>` : ""}
             </div>
             
           </div>
@@ -52,9 +42,33 @@
 
         <div class="details-wrapper">
           <h4>Details</h4>
-          ${ listing.examples ? `<img class="listing-hero" src="${listing.examples}">` : ""}
+          <div class="details-content-wrapper">
+
+
+            <div>
+              <p><i data-feather="check"></i> Do</p>
+              <ul class="details">
+                  ${ listing.DetailDo ? childTagsA(listing.DetailDo) : ""} 
+              </ul>
+            </div>
+
+            <div>
+              <p><i data-feather="x"></i> Avoid</p>
+              <ul class="details">
+                ${ listing.DetailDont ? childTagsA(listing.DetailDont) : ""} 
+              </ul>
+            </div>
+
+            <div>
+              <p>Examples</p>
+              ${ listing.examples ? `<img class="example-hero" src="${listing.examples}">` : ""}
+            </div>
+
+          
+          
+          </div>
         </div>
-      
+
       </div>
     `;
   }
@@ -64,8 +78,13 @@
   document.getElementById("list-image-transparent").innerHTML = `${DataImageTransparent.map(listingTemplate).join("")}`;
   document.getElementById("list-image-colour").innerHTML = `${DataImageColour.map(listingTemplate).join("")}`;
 
+  document.getElementById("list-colours").innerHTML = `${DataColours.map(listingTemplate).join("")}`;
 
   document.getElementById("list-logo-aspect").innerHTML = `${DataLogoAspect.map(listingTemplate).join("")}`;
   document.getElementById("list-logo-detail").innerHTML = `${DataLogoDetail.map(listingTemplate).join("")}`;
+
+  document.getElementById("list-type").innerHTML = `${DataType.map(listingTemplate).join("")}`;
+
+
 
   
