@@ -7,7 +7,9 @@ const DataImageFull = [
     icon: "image",
     name: "Full Image",
     description: "Any image with the contents extending to all edges of the frame.",
-      DetailDo: ["content here", "content here", "content here"],
+      DetailDo: [ "content here", 
+                  "content <a href=\"#\">link here</a> here", 
+                  "content here"],
       DetailDont: ["Full Colour", "B&W", "Desaturated"],
 
     examples: "assets/image-full.png"
