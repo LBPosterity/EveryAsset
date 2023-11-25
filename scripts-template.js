@@ -46,7 +46,7 @@
 
 
             <div>
-              <p><i data-feather="check"></i> Do</p>
+              <p><i data-feather="check"></i> Consider</p>
               <ul class="details">
                   ${ listing.DetailDo ? childTagsA(listing.DetailDo) : ""} 
               </ul>
@@ -60,8 +60,10 @@
             </div>
 
             <div>
+              ${ listing.examples ? `
               <p>Examples</p>
-              ${ listing.examples ? `<img class="example-hero" src="${listing.examples}">` : ""}
+              <img class="example-hero" src="${listing.examples}">
+              ` : ""}
             </div>
 
           

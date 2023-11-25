@@ -7,12 +7,13 @@ const DataImageFull = [
     icon: "image",
     name: "Full Image",
     description: "Any image with the contents extending to all edges of the frame.",
-      DetailDo: [ "content here", 
-                  "content <a href=\"#\">link here</a> here", 
+      DetailDo: [ "Display using fill or cover.", 
+                  "Define the image focus area is possible. Use the <a href=\"#\">background position</a> technique.", 
                   "content here"],
-      DetailDont: ["Full Colour", "B&W", "Desaturated"],
+      DetailDont: [ "Cropping with contain fill modes.", 
+                    "Using behind test without adding an overlay or adjusting it's contrast."],
 
-    examples: "assets/image-full.png"
+    examples: ""
   },
   {
     hero: "assets/image-full.png",
@@ -160,6 +161,20 @@ const DataColours = [
       name: "Monochromtic",
       icon: "droplet",
       description: "Any image with the contents extending to all edges of the frame.",
+    },
+    {
+      hero: "assets/image-full.png",
+      type: "colour",
+      name: "Duotone",
+      icon: "droplet",
+      description: "An image with a clear single point of focus",
+    },
+    {
+      hero: "assets/image-full.png",
+      type: "colour",
+      name: "Triadic",
+      icon: "droplet",
+      description: "An image with a clear single point of focus",
     },
     {
       hero: "assets/image-full.png",

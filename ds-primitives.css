@@ -309,6 +309,14 @@ hr
 
 /*-- Typography Styles ---------------------------------*/
 
+@media screen and (max-width: 800px)
+{
+  :root
+  {
+  --text-base: 1.4rem;
+  }
+}
+
 
 /* Typography ------------------------*/
 
