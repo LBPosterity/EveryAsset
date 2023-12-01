@@ -24,7 +24,7 @@ const DataImageFull = [
 
     DetailDo: [   "Define the image focus area is possible. Use the <a href=\"#\">background position</a> technique.", 
                   "Likely best suited as hero foreground content where the single point of focus can engage the viewers eye.", 
-                  "Consider fading the image & content background to draw more attention to the point of focus."],
+                  "Consider fading the image & content background to draw more attention to the point of"],
     DetailDont: [ "Child Tag A", 
                   "Child Tag B", 
                   "Child Tag C"],
