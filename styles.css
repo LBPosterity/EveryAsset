@@ -78,7 +78,7 @@ ul
 .column-parent .parent-listing
 {
   position: sticky;
-  top: 0;
+  top: var(--size-2);
 }
 
 .inner-wrapper
@@ -214,7 +214,7 @@ header
 {
   content: '↬';
   position: absolute;
-  top: 50%;
+  top: var(--size-4);
   right: calc(var(--size-2) * -1);
   transform: translateY(-50%) rotate(-90deg);
   --size: var(--size-4);
@@ -338,7 +338,7 @@ header
   align-items: center;
   text-align: center;
   gap: var(--size-2);
-  padding: calc(var(--size-1) *6.9) var(--size-2);
+  padding: calc(var(--size-1) *8.4) var(--size-2);
   border-bottom: 1px solid var(--grey-200);
   margin-bottom: var(--size-2);
 }
@@ -358,7 +358,7 @@ header
 {
   content: '↬';
   position: absolute;
-  top: 50%;
+  top: var(--size-4);
   right: calc(var(--size-4) * -1);
   transform: translateY(-50%);
   --size: var(--size-4);

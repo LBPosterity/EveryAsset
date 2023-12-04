@@ -31,7 +31,7 @@
                 <i data-feather="${listing.icon}"></i>
                 <h5 class="listing-name">${listing.name}</h5>
               </div>
-              <button class="expand-this">Expand<i data-feather="maximize-2"></i></button>
+              <button class="expand-this">View<i data-feather="maximize-2"></i></button>
             </div>
             <div class="description-wrapper">
             ${listing.description ? `<p>${listing.description}</p>` : ""}

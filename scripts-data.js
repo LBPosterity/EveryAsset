@@ -8,7 +8,7 @@ const DataImageFull = [
     name: "Full Image",
     description: "Any image with the contents filling all areas of the frame.",
       DetailDo: [   "Display using fill or cover.", 
-                    "Define the image focus area is possible. Use the <a href=\"#\">background position</a> technique.", 
+                    "Define the image focus area if possible. Use the <a href=\"#\">background position</a> technique.", 
                     "Define if the image is a foreground or background element to inform how it's used."],
       DetailDont: [ "Cropping with contain fill modes.", 
                     "Using behind text without adding an overlay or adjusting it's contrast."],
@@ -24,10 +24,10 @@ const DataImageFull = [
 
     DetailDo: [   "Define the image focus area is possible. Use the <a href=\"#\">background position</a> technique.", 
                   "Likely best suited as hero foreground content where the single point of focus can engage the viewers eye.", 
-                  "Consider fading the image & content background to draw more attention to the point of"],
-    DetailDont: [ "Child Tag A", 
-                  "Child Tag B", 
-                  "Child Tag C"],
+                  "Consider fading the image & content background together to draw more attention to the single point of focus"],
+    DetailDont: [ "Using as an image background behind text. The strong focus point can distract from the text legibility.", 
+                  "", 
+                  ""],
 
     examples: "assets/image-full.png"
   },
@@ -38,8 +38,12 @@ const DataImageFull = [
     icon: "image",
     description: "An image with multiple points of focus.",
 
-    DetailDo: ["Child Tag A", "Child Tag B", "Child Tag C"],
-    DetailDont: ["Child Tag A", "Child Tag B", "Child Tag C"],
+    DetailDo: [ "Usually optimial to display using fill or cover.", 
+                "Define the image focus area is possible, although, this can be more diffuclt with plultipls focus points. Use the <a href=\"#\">background position</a> technique.", 
+                "If using 'contain' sizing consider the image aspect ratio. A more square ratio will work better in more layouts."],
+    DetailDont: [ "Using as an image background behind text. The strong focus point can distract from the text legibility.", 
+                  "", 
+                  ""],
 
     examples: "assets/image-full.png"
   },
@@ -48,10 +52,14 @@ const DataImageFull = [
     type: "image",
     name: "Texture",
     icon: "image",
-    description: "A close us image of a texture or surface.",
+    description: "An image with a very shallow focus, like a close up image of a texture, surface or abstract forms.",
 
-    DetailDo: ["Multi Point", "Child Tag B", "Child Tag C"],
-    DetailDont: ["Child Tag A", "Child Tag B", "Child Tag C"],
+    DetailDo: [ "Use as a primarily a background element. e.g. behind text with an overlay if needed.", 
+                "Consider the size & scale of the image. e.g. if it's very shallow in focus it may be overwhelming as a large background", 
+                "Consider using tiling if the image can be repeated. This saves on file size & the size is then adjustable."],
+    DetailDont: [ "Using as a hero foreground element. Textural images are aesthetic but don't 'say' much.", 
+                  "Display using 'contain or fit' sizing.", 
+                  ""],
 
     examples: "assets/image-full.png"
   },
@@ -62,8 +70,12 @@ const DataImageFull = [
     icon: "image",
     description: "An image with a deep & often multi point focus.",
 
-    DetailDo: ["Multi Point", "Child Tag B", "Child Tag C"],
-    DetailDont: ["Child Tag A", "Child Tag B", "Child Tag C"],
+    DetailDo: [ "Use as a background image with or without an overlay for higher contrast.", 
+                "Consider the scale of the the image. The deeper focus will be more appreciated at larger sizes.", 
+                "Define the image focus in the center if possible. Use the <a href=\"#\">background position</a> technique"],
+    DetailDont: [ "Using this image at smaller sizes as the deep focus will be less effective.", 
+                  "Display using 'contain or fit' sizing.", 
+                  ""],
 
     examples: "assets/image-full.png"
   }
@@ -78,6 +90,13 @@ const DataImageTransparent = [
     name: "Float",
     icon: "image",
     description: "Any image with the contents extending to all edges of the frame.",
+
+    DetailDo: [ "", 
+                "", 
+                ""],
+    DetailDont: [ "", 
+                  "", 
+                  ""],
   },
   {
     hero: "assets/image-full.png",
@@ -85,6 +104,13 @@ const DataImageTransparent = [
     name: "Bleeds 1 Edge",
     icon: "image",
     description: "An image with a clear single point of focus",
+
+    DetailDo: [ "", 
+                "", 
+                ""],
+    DetailDont: [ "", 
+                  "", 
+                  ""],
   },
   {
     hero: "assets/image-full.png",
@@ -92,6 +118,13 @@ const DataImageTransparent = [
     name: "Bleeds 2 Connected Edges",
     icon: "image",
     description: "An image with multiple points of focus.",
+
+    DetailDo: [ "", 
+                "", 
+                ""],
+    DetailDont: [ "", 
+                  "", 
+                  ""],
   },
   {
     hero: "assets/image-full.png",
@@ -99,6 +132,13 @@ const DataImageTransparent = [
     name: "Bleeds 2 Opposed Edges",
     icon: "image",
     description: "A close us image of a texture or surface.",
+
+    DetailDo: [ "", 
+                "", 
+                ""],
+    DetailDont: [ "", 
+                  "", 
+                  ""],
   },
   {
     hero: "assets/image-full.png",
@@ -106,6 +146,13 @@ const DataImageTransparent = [
     name: "Bleeds 3 Edges",
     icon: "image",
     description: "An image with a deep & often multi point focus.",
+
+    DetailDo: [ "", 
+                "", 
+                ""],
+    DetailDont: [ "", 
+                  "", 
+                  ""],
   }
 ];
 
@@ -118,6 +165,13 @@ const DataImageColour = [
     name: "Full Colour",
     icon: "image",
     description: "Any image with the contents extending to all edges of the frame.",
+
+    DetailDo: [ "", 
+                "", 
+                ""],
+    DetailDont: [ "", 
+                  "", 
+                  ""],
   },
   {
     hero: "assets/image-full.png",
@@ -125,6 +179,13 @@ const DataImageColour = [
     name: "Black & White",
     icon: "image",
     description: "An image with a clear single point of focus",
+
+    DetailDo: [ "", 
+                "", 
+                ""],
+    DetailDont: [ "", 
+                  "", 
+                  ""],
   },
   {
     hero: "assets/image-full.png",
@@ -132,6 +193,13 @@ const DataImageColour = [
     name: "Desaturated",
     icon: "image",
     description: "An image with multiple points of focus.",
+
+    DetailDo: [ "", 
+                "", 
+                ""],
+    DetailDont: [ "", 
+                  "", 
+                  ""],
   },
   {
     hero: "assets/image-full.png",
@@ -139,6 +207,13 @@ const DataImageColour = [
     name: "2 Colour - Monochromatic",
     icon: "image",
     description: "A close us image of a texture or surface.",
+  
+    DetailDo: [ "", 
+                "", 
+                ""],
+    DetailDont: [ "", 
+                  "", 
+                  ""],
   },
   {
     hero: "assets/image-full.png",
@@ -146,6 +221,13 @@ const DataImageColour = [
     name: "3 Colours - Triadic",
     icon: "image",
     description: "An image with a deep & often multi point focus.",
+
+    DetailDo: [ "", 
+                "", 
+                ""],
+    DetailDont: [ "", 
+                  "", 
+                  ""],
   },
   {
     hero: "assets/image-full.png",
@@ -153,6 +235,13 @@ const DataImageColour = [
     name: "4 Colours - Quadradic",
     icon: "image",
     description: "An image with a deep & often multi point focus.",
+
+    DetailDo: [ "", 
+                "", 
+                ""],
+    DetailDont: [ "", 
+                  "", 
+                  ""],
   }
 ];
 
@@ -165,6 +254,13 @@ const DataColours = [
       name: "Monochromtic",
       icon: "droplet",
       description: "Any image with the contents extending to all edges of the frame.",
+
+      DetailDo: [ "", 
+                  "", 
+                  ""],
+      DetailDont: [ "", 
+                    "", 
+                    ""],
     },
     {
       hero: "assets/image-full.png",
@@ -172,6 +268,13 @@ const DataColours = [
       name: "Duotone",
       icon: "droplet",
       description: "An image with a clear single point of focus",
+
+      DetailDo: [ "", 
+                  "", 
+                  ""],
+      DetailDont: [ "", 
+                    "", 
+                    ""],
     },
     {
       hero: "assets/image-full.png",
@@ -179,6 +282,13 @@ const DataColours = [
       name: "Triadic",
       icon: "droplet",
       description: "An image with a clear single point of focus",
+
+      DetailDo: [ "", 
+                  "", 
+                  ""],
+      DetailDont: [ "", 
+                    "", 
+                    ""],
     },
     {
       hero: "assets/image-full.png",
@@ -186,6 +296,13 @@ const DataColours = [
       name: "Duotone",
       icon: "droplet",
       description: "An image with a clear single point of focus",
+
+      DetailDo: [ "", 
+                  "", 
+                  ""],
+      DetailDont: [ "", 
+                    "", 
+                    ""],
     }
   ];
   
@@ -200,6 +317,13 @@ const DataLogoAspect = [
       name: "Square",
       icon: "zap",
       description: "Any image with the contents extending to all edges of the frame.",
+
+      DetailDo: [ "", 
+                  "", 
+                  ""],
+      DetailDont: [ "", 
+                    "", 
+                    ""],
     },
     {
       hero: "assets/image-full.png",
@@ -207,6 +331,13 @@ const DataLogoAspect = [
       name: "Average Landscape",
       icon: "zap",
       description: "An image with a clear single point of focus",
+
+      DetailDo: [ "", 
+                  "", 
+                  ""],
+      DetailDont: [ "", 
+                    "", 
+                    ""],
     },
     {
       hero: "assets/image-full.png",
@@ -214,6 +345,13 @@ const DataLogoAspect = [
       name: "Extreme Landscape",
       icon: "zap",
       description: "An image with a clear single point of focus",
+
+      DetailDo: [ "", 
+                  "", 
+                  ""],
+      DetailDont: [ "", 
+                    "", 
+                    ""],
     },
     {
       hero: "assets/image-full.png",
@@ -221,6 +359,13 @@ const DataLogoAspect = [
       name: "Average Portrait",
       icon: "zap",
       description: "An image with a clear single point of focus",
+
+      DetailDo: [ "", 
+                  "", 
+                  ""],
+      DetailDont: [ "", 
+                    "", 
+                    ""],
     },
     {
       hero: "assets/image-full.png",
@@ -228,33 +373,61 @@ const DataLogoAspect = [
       name: "Extreme Portrait",
       icon: "zap",
       description: "An image with a clear single point of focus",
+
+      DetailDo: [ "", 
+                  "", 
+                  ""],
+      DetailDont: [ "", 
+                    "", 
+                    ""],
     },
   ];
   
 
-  const DataLogoDetail = [
+const DataLogoDetail = [
+  {
+      hero: "assets/image-full.png",
+      type: "image",
+      name: "Low Detail",
+      icon: "zap",
+      description: "Any image with the contents extending to all edges of the frame.",
+      
+      DetailDo: [ "", 
+                  "", 
+                  ""],
+      DetailDont: [ "", 
+                    "", 
+                    ""],
+    },
     {
-        hero: "assets/image-full.png",
-        type: "image",
-        name: "Low Detail",
-        icon: "zap",
-        description: "Any image with the contents extending to all edges of the frame.",
-      },
-      {
-        hero: "assets/image-full.png",
-        type: "image",
-        name: "Medium Detail",
-        icon: "zap",
-        description: "An image with a clear single point of focus",
-      },
-      {
-        hero: "assets/image-full.png",
-        type: "image",
-        name: "High Detail",
-        icon: "zap",
-        description: "An image with a clear single point of focus",
-      },
-    ];
+      hero: "assets/image-full.png",
+      type: "image",
+      name: "Medium Detail",
+      icon: "zap",
+      description: "An image with a clear single point of focus",
+
+      DetailDo: [ "", 
+                  "", 
+                  ""],
+      DetailDont: [ "", 
+                    "", 
+                    ""],
+    },
+    {
+      hero: "assets/image-full.png",
+      type: "image",
+      name: "High Detail",
+      icon: "zap",
+      description: "An image with a clear single point of focus",
+
+      DetailDo: [ "", 
+                  "", 
+                  ""],
+      DetailDont: [ "", 
+                    "", 
+                    ""],
+    },
+  ];
     
   
 const DataType = [
@@ -264,6 +437,13 @@ const DataType = [
       name: "Display",
       icon: "type",
       description: "Any image with the contents extending to all edges of the frame.",
+
+      DetailDo: [ "", 
+                  "", 
+                  ""],
+      DetailDont: [ "", 
+                    "", 
+                    ""],
     },
     {
       hero: "assets/image-full.png",
@@ -271,6 +451,13 @@ const DataType = [
       name: "Serif",
       icon: "type",
       description: "An image with a clear single point of focus",
+
+      DetailDo: [ "", 
+                  "", 
+                  ""],
+      DetailDont: [ "", 
+                    "", 
+                    ""],
     },
     {
     hero: "assets/image-full.png",
@@ -278,6 +465,13 @@ const DataType = [
     name: "Sans Serif",
     icon: "type",
     description: "Any image with the contents extending to all edges of the frame.",
+
+      DetailDo: [ "", 
+                  "", 
+                  ""],
+      DetailDont: [ "", 
+                    "", 
+                    ""],
     },
     {
     hero: "assets/image-full.png",
@@ -285,6 +479,13 @@ const DataType = [
     name: "Monospace",
     icon: "type",
     description: "Any image with the contents extending to all edges of the frame.",
+
+      DetailDo: [ "", 
+                  "", 
+                  ""],
+      DetailDont: [ "", 
+                    "", 
+                    ""],
     },
     {
       hero: "assets/image-full.png",
@@ -292,6 +493,13 @@ const DataType = [
       name: "Handwritten",
       icon: "type",
       description: "Any image with the contents extending to all edges of the frame.",
+
+      DetailDo: [ "", 
+                  "", 
+                  ""],
+      DetailDont: [ "", 
+                    "", 
+                    ""],
       },
   ];
   
