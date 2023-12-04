@@ -212,7 +212,7 @@ header
 
 .parent-type::after
 {
-  content: '➸';
+  content: '↬';
   position: absolute;
   top: 50%;
   right: calc(var(--size-2) * -1);
@@ -221,7 +221,7 @@ header
   width: var(--size);
   height: var(--size);
   background: var(--blue-100);
-  border: 1px solid var(--grey-200);
+  border: 0px solid var(--grey-200);
   border-radius: var(--radius-rounded);
   text-align: center;
   line-height: 1.4;
@@ -356,7 +356,7 @@ header
 
 .parent-listing::after
 {
-  content: '➸';
+  content: '↬';
   position: absolute;
   top: 50%;
   right: calc(var(--size-4) * -1);
@@ -365,7 +365,7 @@ header
   width: var(--size);
   height: var(--size);
   background: var(--blue-100);
-  border: 1px solid var(--grey-200);
+  border: 0px solid var(--grey-200);
   border-radius: var(--radius-rounded);
   text-align: center;
   line-height: 1.4;
