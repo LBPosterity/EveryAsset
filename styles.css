@@ -338,9 +338,11 @@ header
   align-items: center;
   text-align: center;
   gap: var(--size-2);
-  padding: calc(var(--size-1) *8.4) var(--size-2);
+  padding: calc(var(--size-1) *8.4) var(--size-2); 
+  padding-block: 0 var(--size-4);
+  padding-inline: var(--size-2);
   border-bottom: 1px solid var(--grey-200);
-  margin-bottom: var(--size-2);
+  margin-bottom: var(--size-4);
 }
 
 .parent-listing h6
@@ -474,6 +476,7 @@ button svg
 .hero-wrapper
 {
   width: 25%;
+  flex: none;
 }
 
       @media screen and (max-width: 800px) {

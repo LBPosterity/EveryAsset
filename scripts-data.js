@@ -91,7 +91,7 @@ const DataImageTransparent = [
     icon: "image",
     description: "Any image with the contents extending to all edges of the frame.",
 
-    DetailDo: [ "", 
+    DetailDo: [ "Display using 'Fit' or 'contain' to ensure the entire image is visible.", 
                 "", 
                 ""],
     DetailDont: [ "", 
@@ -105,8 +105,8 @@ const DataImageTransparent = [
     icon: "image",
     description: "An image with a clear single point of focus",
 
-    DetailDo: [ "", 
-                "", 
+    DetailDo: [ "Display using 'Fit' or 'contain' to ensure the entire image is visible.", 
+                "Define the image focus area to align wiht the bleeding edge. Use the <a href=\"#\">background position</a> technique.", 
                 ""],
     DetailDont: [ "", 
                   "", 
