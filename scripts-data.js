@@ -106,8 +106,8 @@ const DataImageTransparent = [
     description: "An image with a clear single point of focus",
 
     DetailDo: [ "Display using 'Fit' or 'contain' to ensure the entire image is visible.", 
-                "Define the image focus area to align wiht the bleeding edge. Use the <a href=\"#\">background position</a> technique.", 
-                ""],
+                "Define the image focus area to align wiht the bleeding edge. Use the <a href=\"#\">background position.</a> technique.", 
+                "Allowing the parent wrapper to have a visible overflow to prevent clipping, althought this can cause layout overlap & should be managed carefully."],
     DetailDont: [ "", 
                   "", 
                   ""],
@@ -119,9 +119,9 @@ const DataImageTransparent = [
     icon: "image",
     description: "An image with multiple points of focus.",
 
-    DetailDo: [ "", 
-                "", 
-                ""],
+    DetailDo: [ "Display using the 'cover' or 'fill' background size.", 
+                "Define the image focus area to align wiht the bleeding edge. Use the <a href=\"#\">background position", 
+                "Aligning the bleed alignment witht the overall layout. e.g. if the image bleeds bottom left, place the image on the left of the layout."],
     DetailDont: [ "", 
                   "", 
                   ""],
@@ -147,7 +147,7 @@ const DataImageTransparent = [
     icon: "image",
     description: "An image with a deep & often multi point focus.",
 
-    DetailDo: [ "", 
+    DetailDo: [ "Display using 'cover' or 'Fill' background size.", 
                 "", 
                 ""],
     DetailDont: [ "", 
