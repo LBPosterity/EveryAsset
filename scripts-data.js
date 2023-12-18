@@ -165,7 +165,7 @@ const DataImageColour = [
     description: "Any image with the contents extending to all edges of the frame.",
 
     DetailDo: [ "Making this a hero asset & the main focus. Full colour assets are harder to layer with other elements.", 
-                "", 
+                "Using the image repeated in the backgroudn with a heavy blur to provide a harmonious colour & contrast for content.", 
                 ""],
     DetailDont: [ "Layer this image with text or smaller graphics, because it's full colour, it may not reliably have good contrast.", 
                   "", 
