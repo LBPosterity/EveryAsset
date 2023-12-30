@@ -221,7 +221,7 @@ const DataImageColour = [
     icon: "image",
     description: "An image with a deep & often multi point focus.",
 
-    DetailDo: [ "", 
+    DetailDo: [ "Selecting the most prominant colour from in the image & use it for the heading or CTA in the design.", 
                 "", 
                 ""],
     DetailDont: [ "", 
