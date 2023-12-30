@@ -254,7 +254,7 @@ const DataColours = [
       icon: "droplet",
       description: "Any image with the contents extending to all edges of the frame.",
 
-      DetailDo: [ "", 
+      DetailDo: [ "Using subtle shades & tints to define areas or transitions.", 
                   "", 
                   ""],
       DetailDont: [ "", 
