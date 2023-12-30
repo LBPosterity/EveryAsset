@@ -222,9 +222,9 @@ const DataImageColour = [
     description: "An image with a deep & often multi point focus.",
 
     DetailDo: [ "Selecting the most prominant colour from in the image & use it for the heading or CTA in the design.", 
-                "", 
+                "If one colour is dominant, match the UI palette with this colour & fade it into the content.", 
                 ""],
-    DetailDont: [ "", 
+    DetailDont: [ "Mismatching between the UI theme & the images colours.", 
                   "", 
                   ""],
   },
@@ -235,10 +235,10 @@ const DataImageColour = [
     icon: "image",
     description: "An image with a deep & often multi point focus.",
 
-    DetailDo: [ "", 
-                "", 
+    DetailDo: [ "If the colour distrobution provides a clear accent colour, use this for the heading or CTA.", 
+                "Display as a foreground elelment as it's complexity makes it more difficult to layer with other content.", 
                 ""],
-    DetailDont: [ "", 
+    DetailDont: [ "Using this image behind text content as contrast will be hard to ensure.", 
                   "", 
                   ""],
   }
