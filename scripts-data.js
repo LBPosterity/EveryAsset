@@ -268,7 +268,7 @@ const DataColours = [
       icon: "droplet",
       description: "An image with a clear single point of focus",
 
-      DetailDo: [ "", 
+      DetailDo: [ "Decide if Black and/or White are included in your palette for colouring content. If not, identify which colour pairings contrast enough for text", 
                   "", 
                   ""],
       DetailDont: [ "", 
@@ -282,8 +282,8 @@ const DataColours = [
       icon: "droplet",
       description: "An image with a clear single point of focus",
 
-      DetailDo: [ "", 
-                  "", 
+      DetailDo: [ "Decide if Black and/or White are included in your palette for colouring content. If not, identify which colour pairings contrast enough for text", 
+                  "Following the 60-30-10 colour scheme rule to balance their usage correctly.", 
                   ""],
       DetailDont: [ "", 
                     "", 
@@ -292,7 +292,7 @@ const DataColours = [
     {
       hero: "assets/image-full.png",
       type: "colour",
-      name: "Duotone",
+      name: "Quadratic",
       icon: "droplet",
       description: "An image with a clear single point of focus",
 
