@@ -246,7 +246,7 @@ const DataImageColour = [
 
 
 
-const DataColours = [
+const DataColoursSize = [
   {
       hero: "assets/image-full.png",
       type: "colour",
@@ -306,7 +306,39 @@ const DataColours = [
   ];
   
 
-
+  const DataColoursStyle = [
+    {
+        hero: "assets/image-full.png",
+        type: "colour",
+        name: "Desaturated",
+        icon: "droplet",
+        description: "Any image with the contents extending to all edges of the frame.",
+  
+        DetailDo: [ "Using pure black or including a dark contrasting colour for text in the pallete.", 
+                    "Testing the lighter hues ensuring they're still visible on older monitors with lower DPI.", 
+                    "Also, testing lighter hues when printed as approximately 4-6% contrast is lost when printed depending on the paper type."],
+        DetailDont: [ "", 
+                      "", 
+                      ""],
+      },
+      {
+        hero: "assets/image-full.png",
+        type: "colour",
+        name: "Flurecent",
+        icon: "droplet",
+        description: "An image with a clear single point of focus",
+  
+        DetailDo: [ ".", 
+                    "", 
+                    ""],
+        DetailDont: [ "", 
+                      "", 
+                      ""],
+      }
+    ];
+    
+  
+  
   
 
 const DataLogoAspect = [

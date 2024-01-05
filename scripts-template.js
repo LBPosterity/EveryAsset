@@ -80,7 +80,8 @@
   document.getElementById("list-image-transparent").innerHTML = `${DataImageTransparent.map(listingTemplate).join("")}`;
   document.getElementById("list-image-colour").innerHTML = `${DataImageColour.map(listingTemplate).join("")}`;
 
-  document.getElementById("list-colours").innerHTML = `${DataColours.map(listingTemplate).join("")}`;
+  document.getElementById("list-colours-size").innerHTML = `${DataColoursSize.map(listingTemplate).join("")}`;
+  document.getElementById("list-colours-style").innerHTML = `${DataColoursStyle.map(listingTemplate).join("")}`;
 
   document.getElementById("list-logo-aspect").innerHTML = `${DataLogoAspect.map(listingTemplate).join("")}`;
   document.getElementById("list-logo-detail").innerHTML = `${DataLogoDetail.map(listingTemplate).join("")}`;
