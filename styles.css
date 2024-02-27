@@ -441,6 +441,7 @@ button svg
 
 .listing-wrapper.expanded
 {
+  flex-direction: row;
   --margin: var(--size-12);
   position: fixed;
   top: 50%;
@@ -559,10 +560,29 @@ button svg
   margin: 0;
 }
 
+
+  .listing-wrapper.layout-expanded
+  {
+    position: relative;
+  }
+
+.listing-wrapper.expanded button.expand-this
+{
+  position: absolute;
+  top: var(--size-2);
+  right: var(--size-2);
+}
+
+.listing-wrapper.expanded .hero-wrapper
+{
+  width: 50%;
+}
+
 .details-wrapper .details-content-wrapper
 {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(2, 1fr);
+  font-size: 14px;
 }
 
         @media screen and (max-width: 800px) {
@@ -572,13 +592,20 @@ button svg
           }
         }
 
+
 .listing-wrapper.expanded .details-wrapper
 {
   display: block;
   height: auto;
-  margin-block: var(--size-4);
-  padding-top: var(--size-4);
-  border-top: 1px solid var(--grey-200);
+  padding-inline: var(--size-4);
+  border-left: 1px solid var(--grey-200);
+}
+
+.listing-wrapper.expanded .header-wrapper
+{
+  flex-direction: column;
+  padding-right: var(--size-4);
+  min-width: 40%;
 }
 
 
