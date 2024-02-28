@@ -59,7 +59,7 @@
               </ul>
             </div>
 
-            <div>
+            <div class="examples-wrapper">
               ${ listing.examples ? `
               <p>Examples</p>
               <img class="example-hero" src="${listing.examples}">

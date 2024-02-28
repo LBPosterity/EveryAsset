@@ -10,15 +10,15 @@ $(document).ready(function (){
     $("html").removeClass("layout-default layout-compact layout-expanded");
     $(".layout-control").removeClass("active");
 
-        var newwclass = $(this).attr("id");
-     $("html").toggleClass(newwclass);
-     $(this).addClass("active");
+    var newwclass = $(this).attr("id");
+    $("html").toggleClass(newwclass);
+    $(this).addClass("active");
    });
 
     $(".expand-this").click(function(){
-      $(this).closest(".listing-wrapper").toggleClass("expanded");
-      $(this).toggleClass("active");
-      $("html").toggleClass("no-scroll");
+      $(this).closest(".listing-wrapper").toggleClass("expanded"); 
+      $(this).toggleClass("active").html("✖"); 
+      $("html").toggleClass("no-scroll"); 
     });
 
 });

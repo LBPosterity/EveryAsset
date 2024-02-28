@@ -402,7 +402,7 @@ button.expand-this
   align-items: center;
   gap: var(--size-1);
   border: none;
-  background: white;
+  background: rgba(0, 0, 120, 0.08);
   border-radius: var(--radius-md);
   color: var(--text);
   padding: var(--size-1) var(--size-2);
@@ -414,6 +414,9 @@ button svg
   width: var(--size);
   height: var(--size);
 }
+
+
+
 
 /* Listings - Layout Style --------------------------------- */
 
@@ -453,7 +456,7 @@ button svg
   background: var(--white);
   box-shadow: var(--shadow-lg);
   border-radius: var(--radius-lg);
-  padding: var(--size-6);
+  padding: var(--size-9);
   margin: 0 !important;
   z-index: 999;
   transition: calc(var(--transition) / 2);
@@ -569,19 +572,32 @@ button svg
 .listing-wrapper.expanded button.expand-this
 {
   position: absolute;
-  top: var(--size-2);
-  right: var(--size-2);
+  top: var(--size-3);
+  right: var(--size-3);
+  border-radius: var(--radius-rounded);
+  background: white;
+  box-shadow: 0px 2px 4px rgba(0, 0, 120, 0.2);
+  width: var(--size-6);
+  height: var(--size-6);
 }
 
 .listing-wrapper.expanded .hero-wrapper
 {
-  width: 50%;
+  width: 66%;
+  border-radius: var(--radius-md);
+  overflow: hidden;
+}
+
+.listing-wrapper.expanded .description-wrapper p
+{
+  font-size: 20px;
 }
 
 .details-wrapper .details-content-wrapper
 {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
+  grid-gap: var(--size-4);
   font-size: 14px;
 }
 
@@ -592,20 +608,26 @@ button svg
           }
         }
 
+.examples-wrapper
+{
+  display: none; 
+}
+
 
 .listing-wrapper.expanded .details-wrapper
 {
   display: block;
   height: auto;
-  padding-inline: var(--size-4);
-  border-left: 1px solid var(--grey-200);
+  padding: var(--size-4);
+  border-radius: var(--radius-lg);
+  background: linear-gradient(45deg, var(--blue-200), var(--green-100));
 }
 
 .listing-wrapper.expanded .header-wrapper
 {
   flex-direction: column;
   padding-right: var(--size-4);
-  min-width: 40%;
+  min-width: 33%;
 }
 
 
