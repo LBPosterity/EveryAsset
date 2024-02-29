@@ -17,7 +17,7 @@ $(document).ready(function (){
 
     $(".expand-this").click(function(){
       $(this).closest(".listing-wrapper").toggleClass("expanded"); 
-      $(this).toggleClass("active").html("✖"); 
+      $(this).toggleClass("active"); 
       $("html").toggleClass("no-scroll"); 
     });
 

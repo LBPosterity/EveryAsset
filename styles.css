@@ -221,7 +221,7 @@ header
   width: var(--size);
   height: var(--size);
   background: var(--blue-100);
-  border: 0px solid var(--grey-200);
+  border: 1px solid var(--grey-200);
   border-radius: var(--radius-rounded);
   text-align: center;
   line-height: 1.4;
@@ -367,7 +367,7 @@ header
   width: var(--size);
   height: var(--size);
   background: var(--blue-100);
-  border: 0px solid var(--grey-200);
+  border: 1px solid var(--grey-200);
   border-radius: var(--radius-rounded);
   text-align: center;
   line-height: 1.4;
@@ -402,7 +402,7 @@ button.expand-this
   align-items: center;
   gap: var(--size-1);
   border: none;
-  background: rgba(0, 0, 120, 0.08);
+  background: rgba(0, 0, 120, 0.06);
   border-radius: var(--radius-md);
   color: var(--text);
   padding: var(--size-1) var(--size-2);
@@ -450,16 +450,18 @@ button svg
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: calc(100vw - var(--margin));
-  height: calc(100vh - var(--margin));
+  width: calc(90vw - var(--margin));
+  height: calc(90vh - var(--margin));
   max-width: 1400px;
-  background: var(--white);
+  background: linear-gradient(22deg, rgba(255, 255, 255, 0.66), rgba(255, 255, 255, 0.2));
   box-shadow: var(--shadow-lg);
   border-radius: var(--radius-lg);
-  padding: var(--size-9);
+  overflow: hidden;
+  padding: 0;
   margin: 0 !important;
   z-index: 999;
   transition: calc(var(--transition) / 2);
+  backdrop-filter: blur(12px);
 }
 
         @media screen and (max-width: 800px) {
@@ -579,6 +581,15 @@ button svg
   box-shadow: 0px 2px 4px rgba(0, 0, 120, 0.2);
   width: var(--size-6);
   height: var(--size-6);
+  font-size: 0;
+  overflow: hidden;
+  transition: 0s all !important;
+}
+
+.listing-wrapper.expanded button.expand-this::before
+{
+  content: '✖';
+  font-size: 20px;
 }
 
 .listing-wrapper.expanded .hero-wrapper
@@ -586,6 +597,18 @@ button svg
   width: 66%;
   border-radius: var(--radius-md);
   overflow: hidden;
+}
+
+.listing-wrapper.expanded .title svg
+{
+  --icon-size: var(--size-4);
+  width: var(--icon-size);
+  height: var(--icon-size);
+}
+
+.listing-wrapper.expanded .listing-name
+{
+  font-size: 24px;
 }
 
 .listing-wrapper.expanded .description-wrapper p
@@ -617,16 +640,16 @@ button svg
 .listing-wrapper.expanded .details-wrapper
 {
   display: block;
+  width: 100%;
   height: auto;
-  padding: var(--size-4);
-  border-radius: var(--radius-lg);
-  background: linear-gradient(45deg, var(--blue-200), var(--green-100));
+  padding: var(--size-12);
+  background: rgba(255, 255, 255, 0.95);
 }
 
 .listing-wrapper.expanded .header-wrapper
 {
   flex-direction: column;
-  padding-right: var(--size-4);
+  padding: var(--size-4);
   min-width: 33%;
 }
 
