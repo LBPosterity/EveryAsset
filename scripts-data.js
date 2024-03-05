@@ -2,7 +2,7 @@
 
 const DataImageFull = [
   {
-    hero: "assets/image-full.png",
+    hero: "assets/image-full.jpg",
     type: "image",
     icon: "image",
     name: "Full Image",
@@ -16,7 +16,7 @@ const DataImageFull = [
     examples: ""
   },
   {
-    hero: "assets/image-full.png",
+    hero: "assets/image-full-single-point.jpg",
     type: "image",
     name: "Single Focal Point",
     icon: "image",
@@ -32,7 +32,7 @@ const DataImageFull = [
     examples: "assets/image-full.png"
   },
   {
-    hero: "assets/image-full.png",
+    hero: "assets/image-full-multi-point.jpg",
     type: "image",
     name: "Multi Point Focus",
     icon: "image",
@@ -48,7 +48,7 @@ const DataImageFull = [
     examples: "assets/image-full.png"
   },
   {
-    hero: "assets/image-full.png",
+    hero: "assets/image-full-texture.jpg",
     type: "image",
     name: "Texture",
     icon: "image",
@@ -64,7 +64,7 @@ const DataImageFull = [
     examples: "assets/image-full.png"
   },
   {
-    hero: "assets/image-full.png",
+    hero: "assets/image-full-deep.jpg",
     type: "image",
     name: "Deep Focus",
     icon: "image",
@@ -85,7 +85,7 @@ const DataImageFull = [
 
 const DataImageTransparent = [
   {
-    hero: "assets/image-full.png",
+    hero: "assets/image-float.jpg",
     type: "image",
     name: "Float",
     icon: "image",
@@ -99,7 +99,7 @@ const DataImageTransparent = [
                   ""],
   },
   {
-    hero: "assets/image-full.png",
+    hero: "assets/image-float-bleed-1-edge.jpg",
     type: "image",
     name: "Bleeds 1 Edge",
     icon: "image",
@@ -113,7 +113,7 @@ const DataImageTransparent = [
                   ""],
   },
   {
-    hero: "assets/image-full.png",
+    hero: "assets/image-float-bleed-2-edge.jpg",
     type: "image",
     name: "Bleeds 2 Connected Edges",
     icon: "image",
@@ -127,7 +127,7 @@ const DataImageTransparent = [
                   ""],
   },
   {
-    hero: "assets/image-full.png",
+    hero: "assets/image-float-bleed-2-edge.jpg",
     type: "image",
     name: "Bleeds 2 Opposed Edges",
     icon: "image",
@@ -141,7 +141,7 @@ const DataImageTransparent = [
                   ""],
   },
   {
-    hero: "assets/image-full.png",
+    hero: "assets/image-float-bleed-3-edge.jpg",
     type: "image",
     name: "Bleeds 3 Edges",
     icon: "image",
@@ -343,7 +343,7 @@ const DataColoursSize = [
 
 const DataLogoAspect = [
   {
-      hero: "assets/image-full.png",
+      hero: "assets/logo-aspect-square.jpg",
       type: "image",
       name: "Square",
       icon: "zap",
@@ -357,7 +357,7 @@ const DataLogoAspect = [
                     ""],
     },
     {
-      hero: "assets/image-full.png",
+      hero: "assets/logo-aspect-landscape.jpg",
       type: "image",
       name: "Average Landscape",
       icon: "zap",
@@ -371,7 +371,7 @@ const DataLogoAspect = [
                     ""],
     },
     {
-      hero: "assets/image-full.png",
+      hero: "assets/logo-aspect-landscape-extreme.jpg",
       type: "image",
       name: "Extreme Landscape",
       icon: "zap",
@@ -385,7 +385,7 @@ const DataLogoAspect = [
                     ""],
     },
     {
-      hero: "assets/image-full.png",
+      hero: "assets/logo-aspect-portrait.jpg",
       type: "image",
       name: "Average Portrait",
       icon: "zap",
@@ -399,7 +399,7 @@ const DataLogoAspect = [
                     ""],
     },
     {
-      hero: "assets/image-full.png",
+      hero: "assets/logo-aspect-portrait-extreme.jpg",
       type: "image",
       name: "Extreme Portrait",
       icon: "zap",
