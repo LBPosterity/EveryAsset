@@ -10,9 +10,9 @@
 
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
  
-  <link rel="stylesheet" type="text/css" href="ds-primitives.css">
-  <link rel="stylesheet" type="text/css" href="ds-tokens.css">
-  <link rel="stylesheet" type="text/css" href="styles.css">
+  <link rel="stylesheet" type="text/css" href="../ds-primitives.css">
+  <link rel="stylesheet" type="text/css" href="../ds-tokens.css">
+  <link rel="stylesheet" type="text/css" href="../styles.css">
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script> 
   <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
@@ -24,11 +24,25 @@
 <body>
   <div id="header"></div>
 
-  <h1>AI UI Patterns</h1>
+  <h1>Pattern A</h1>
 
-  <a href="patterns/pattern-a.html"><button>Pattern A</button></a>
+  <p>Pattern A content goes here.</p>
 
-<script type="text/javascript" src="scripts-ui.js"></script>
+  <iframe 
+          width="800" height="450" 
+          src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2FzZsnp1IG505BXk5qFua0Th%2FAI-Prompt-UI-Patterns%3Fpage-id%3D0%253A1%26type%3Ddesign%26node-id%3D100-2602%26viewport%3D-1335%252C529%252C0.43%26t%3Dxu70XEOVObl41k4q-1%26scaling%3Dscale-down-width%26starting-point-node-id%3D250%253A8756%26mode%3Ddesign" 
+          allowfullscreen>
+  </iframe>
+
+  <h1>Pattern A</h1>
+
+  <p>Pattern A content goes here.</p>
+
+  
+
+
+<script type="text/javascript" src="../scripts-ui.js"></script>
+
 
 <script>
   feather.replace()
@@ -37,13 +51,15 @@
 <script>
 
   $(document).ready(function (){
-    $( '#header').load("header.html");
+    $( '#header').load("../header.html");
   });
 
 
 </script>
 
 </body>
+
+
 
 </html>
 
